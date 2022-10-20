@@ -54,11 +54,11 @@ h4 {
 }
 
 h5 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: var(--azul);
   line-height: 3rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0px;
 }
 
@@ -124,17 +124,17 @@ nav {
   position: fixed;
   top: 88px;
   transition: all 1500ms ease;
-  transform: translateX(200%);
+  transform: translateX(100vw);
 }
 
 #btn-menu:checked + #menu-desplegable ul {
-  transform: translateX(20%);
+  transform: translateX(20vw);
 }
 
 #menu-desplegable label {
   position: absolute;
   left: 0;
-  width: 95vw;
+  width: 80vw;
   background-color: var(--blanco);
   color: var(--azul);
   padding: 12px;
@@ -387,11 +387,12 @@ h1 {
 
 .tarjeta-caracteristica-producto {
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .tarjeta-caracteristica-producto img {
   display: block;
-  width: 100%;
+  width: 80%;
   margin-top: 15px;
   border-radius: 8px;
 }
@@ -400,6 +401,14 @@ h1 {
   font-size: 1.4rem;
   line-height: 2.3rem;
   margin: 0;
+}
+
+.producto-par img {
+  margin-left: auto;
+}
+
+.producto-par {
+  text-align: right;
 }
 
 #seccion-producto a {
@@ -414,13 +423,15 @@ h1 {
   color: var(--naranja);
 }
 
-.linea-separacion-caracteristicas-producto {
+/* LINEA DE SEPARACION DE PRODUCTO QUITADA ATENCION!!!!! */
+
+/* .linea-separacion-caracteristicas-producto {
   width: 25%;
   height: 2px;
   background-color: var(--azul);
   margin: 15px auto;
   border-radius: 5px;
-}
+} */ 
 
 /* SECCION NUESTROS CLIENTES */
 
