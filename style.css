@@ -23,7 +23,6 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 a {
@@ -94,9 +93,21 @@ nav {
   justify-content: space-between;
   border-bottom: 1px solid var(--gris);
 }
+
+#navbar-desktop {
+  display: none;
+}
 #nav-logo {
   width: auto;
   height: 45px;
+}
+
+.bandera-idioma img {
+  width: 35px;
+}
+.bandera-idioma img:hover {
+  transform: scale(1.2);
+  transition: all 600ms ease;
 }
 #nav-menu {
   width: auto;
@@ -150,8 +161,8 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 400ms ease-in;  
-  transform: scale(1.05); 
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
 }
 #btn-menu {
   display: none;
@@ -172,8 +183,8 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 400ms ease-in; 
-  transform: scale(1.05); 
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
 }
 
 #li-seleccion-idioma {
@@ -191,9 +202,8 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 300ms ease-in;
-  transition: all 400ms ease-in; 
-  transform: scale(1.05); 
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
 }
 
 #li-seleccion-idioma a:hover {
@@ -222,8 +232,12 @@ nav {
 
 /* TITULO PRINCIPAL */
 #seccion-inicio {
-  padding-top: 108px;
+  padding-top: 120px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
 h1 {
   font-size: 3.2rem;
   font-weight: 800;
@@ -253,10 +267,12 @@ h1 {
 #seccion-inicio img {
   display: block;
   width: 100%;
+  max-width: 700px;
 }
 
 #seccion-inicio .boton-contactenos {
   margin-left: 20px;
+  order: 3;
 }
 
 #circulo-decorativo-grande {
@@ -266,7 +282,7 @@ h1 {
   position: absolute;
   right: 0;
   top: -10%;
-  border-radius: 800px 0 0 800px;
+  border-radius: 5000px 0 0 5000px;
 }
 #circulo-decorativo-mediano {
   width: 20vw;
@@ -288,44 +304,10 @@ h1 {
   bottom: -7%;
 }
 
-/*
-#circulo-decorativo-grande {
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  background-color: var(--azul);
-  position: absolute;
-  right: -40%;
-  top: -20%;
-  z-index: -1;
-  max-width: 500px;
-}
-
-#circulo-decorativo-mediano {
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  background-color: var(--azul);
-  position: absolute;
-  left: -15%;
-  top: 25%;
-  z-index: -1;
-  max-width: 250px;
-}
-
-#circulo-decorativo-chico {
-  width: 25%;
-  height: 25%;
-  border-radius: 50%;
-  background-color: var(--azul);
-  position: absolute;
-  left: 50%;
-  bottom: -5%;
-  z-index: -1;
-  max-width: 125px;
-}
-*/
 /* BOTON DE CONTACTENOS */
+#boton-inicio-desktop {
+  display: none;
+}
 
 .boton-contactenos {
   display: inline-block;
@@ -337,12 +319,12 @@ h1 {
   font-weight: 400;
   box-sizing: border-box;
   transition: all 500ms ease;
+  width: fit-content;
 }
 
 .boton-contactenos:hover {
-  background-color: var(
-    --naranja
-  ); /* ATENCION!!! CREAR TRANSICION MAS DELICADA PARA LOS BOTONES */
+  background-color: var(--naranja);
+  transition: all 500ms ease; /* ATENCION!!! CREAR TRANSICION MAS DELICADA PARA LOS BOTONES */
 }
 
 /* FIN SECCION INICIO */
@@ -367,6 +349,7 @@ h1 {
   display: block;
   width: 100%;
   margin: 30px auto;
+  max-width: 520px;
 }
 
 .div-caracteristicas-marca {
@@ -395,6 +378,7 @@ h1 {
   width: 80%;
   margin-top: 15px;
   border-radius: 8px;
+  max-width: 280px;
 }
 
 .tarjeta-caracteristica-producto p {
@@ -422,16 +406,6 @@ h1 {
 #seccion-producto a:hover {
   color: var(--naranja);
 }
-
-/* LINEA DE SEPARACION DE PRODUCTO QUITADA ATENCION!!!!! */
-
-/* .linea-separacion-caracteristicas-producto {
-  width: 25%;
-  height: 2px;
-  background-color: var(--azul);
-  margin: 15px auto;
-  border-radius: 5px;
-} */ 
 
 /* SECCION NUESTROS CLIENTES */
 
@@ -462,6 +436,7 @@ h1 {
   width: 50%;
   display: block;
   margin: 0 auto;
+  max-width: 250px;
 }
 .carrusel-elemento {
   float: left;
@@ -571,6 +546,9 @@ h1 {
   color: var(--naranja);
   border: 1.5px solid var(--naranja);
 }
+#seccion-nuestros-clientes #boton-ver-todos-desktop {
+  display: none;
+}
 
 /* SECCION SERVICIO TECNICO */
 
@@ -578,7 +556,7 @@ h1 {
   display: none;
 }
 
-#seccion-servicio-tecnico > img {
+#seccion-servicio-tecnico-texto > img {
   width: 50px;
   height: 50px;
   margin-top: 25px;
@@ -606,7 +584,7 @@ h1 {
   background-color: var(--azul);
   color: var(--blanco);
   padding: 35px 20px;
-  max-width: 375px;
+  max-width: 800px;
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 10px;
@@ -616,9 +594,10 @@ h1 {
   color: var(--blanco);
   margin-bottom: 35px;
 }
-#contenedor-decorativo > img {
+#seccion-contacto-texto > img {
   width: 25%;
   margin-bottom: 25px;
+  max-width: 65px;
 }
 
 form {
@@ -643,6 +622,9 @@ textarea {
   padding: 10px;
   font-family: "Inter", sans-serif;
   margin-bottom: 15px;
+  resize: none;
+  height: 150px;
+  overflow-y: visible;
 }
 textarea::placeholder {
   color: #7c7c7c;
@@ -679,6 +661,10 @@ textarea::placeholder {
   margin-right: 10px;
   cursor: pointer;
 }
+#div-botones-radio label:hover {
+  color: var(--naranja);
+  transition: all 400ms ease;
+}
 
 form > button {
   font-family: "Inter", sans-serif;
@@ -693,9 +679,9 @@ form > button {
 }
 
 form > button:hover {
-  background-color: #c5c5c5;
-  color: black;
-  transition: all 300ms ease;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  transition: all 400ms ease;
 }
 
 #div-datos-de-contacto {
@@ -713,6 +699,9 @@ form > button:hover {
   color: var(--naranja);
   transition: all 400ms ease;
 }
+#div-datos-de-contacto > img {
+  display: none;
+}
 #div-datos-de-contacto img {
   width: 20px;
   margin-right: 10px;
@@ -724,6 +713,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 45px;
 }
 
 footer h6 {
@@ -750,10 +740,9 @@ footer h6 {
   font-size: 1.6rem;
 }
 
-#div-leyenda-empresa {
-  margin-bottom: 25px;
+#div-accesos-rapidos {
+  padding: 0 20px;
 }
-
 #div-idioma {
   margin-bottom: 25px;
 }
@@ -815,7 +804,7 @@ footer h6 {
 }
 
 #link-whatsapp {
-  position: fixed; 
+  position: fixed;
   bottom: 25px;
   right: 20px;
 }
@@ -841,8 +830,404 @@ MOBILE
 
 /* MEDIA QUERIES */
 
-@media (max-width: 375px) {
-  
+/* DESDE 425px a 768px */
+
+@media (min-width: 425px) {
+  /* ESTANDARIZACIONES GENERALES */
+
+  .padding-0-20 {
+    padding: 0 35px;
+  }
+  #seccion-inicio .boton-contactenos {
+    margin-left: 35px;
+  }
+  #contenedor-decorativo {
+    padding: 35px;
+  }
+  nav {
+    padding: 20px 35px;
+  }
+  footer {
+    padding: 35px;
+  }
+  .width-1-de-3 {
+    width: 30%;
+  }
+  #div-leyenda-empresa p {
+    width: 70%;
+  }
+  #contenedor-decorativo {
+    margin: 0 35px;
+  }
+}
+/* DESDE 768px a 1024px */
+@media (min-width: 768px) {
+  /* ESTANDARIZACIONES GENERALES */
+  #menu-desplegable ul {
+    display: none;
+  }
+  .linea-superior-seccion {
+    top: -178px;
+  }
+
+  .padding-0-20 {
+    padding: 0 50px;
+  }
+  nav {
+    padding: 20px 50px;
+    border: none;
+  }
+
+  #container-img-forma-trapecio {
+    padding: 0 50px 0 0;
+  }
+
+  #navbar-desktop {
+    display: block;
+  }
+
+  section {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  /* HEADER */
+
+  #navbar-desktop ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--blanco);
+    width: 100%;
+  }
+  #navbar-desktop a {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--azul);
+    color: var(--blanco);
+    justify-content: center;
+    padding: 15px 0px;
+    border-right: 1px solid var(--blanco);
+    flex-grow: 1;
+  }
+  #navbar-desktop a:hover {
+    background-color: var(--naranja);
+    transition: all 600ms ease;
+  }
+
+  #navbar-desktop #link-contacto {
+    border-right: none;
+  }
+
+  nav label {
+    display: none;
+  }
+
+  /* SECCION INICIO */
+
+  #seccion-inicio {
+    align-items: center;
+    flex-direction: row;
+    height: calc(100vh - 133px);
+    justify-content: center;
+    padding: auto;
+  }
+  #container-decorativo-producto-inicio {
+    margin-bottom: 0;
+  }
+  #circulo-decorativo-grande {
+    top: -20%;
+  }
+  #circulo-decorativo-mediano {
+    width: 10vw;
+    height: 10vw;
+    left: -9%;
+    top: 35%;
+  }
+
+  #circulo-decorativo-chico {
+    width: 5vw;
+    height: 5vw;
+    left: 50%;
+    bottom: -5%;
+  }
+
+  #div-h1 {
+    width: 60%;
+  }
+  #seccion-inicio .boton-contactenos {
+    margin: 100px 0 0 50px;
+  }
+  #boton-inicio-desktop {
+    display: block;
+  }
+  #boton-inicio-mobile {
+    display: none;
+  }
+
+  /* SECCION QUIENES SOMOS */
+  #seccion-quienes-somos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "top-seccion top-seccion"
+      "img h2"
+      "img p"
+      "img div-calidad"
+      "img div-compromiso"
+      "img boton";
+  }
+  #seccion-quienes-somos > img {
+    grid-area: img;
+    padding-right: 20px;
+    box-sizing: border-box;
+    align-self: center;
+  }
+  #seccion-quienes-somos h2 {
+    grid-area: h2;
+  }
+  #seccion-quienes-somos p {
+    grid-area: p;
+  }
+  #div-calidad {
+    grid-area: div-calidad;
+  }
+  #div-compromiso {
+    grid-area: div-compromiso;
+    margin-bottom: 15px;
+  }
+  #seccion-quienes-somos .div-caracteristicas-marca img {
+    width: 50px;
+    height: 50px;
+  }
+  #seccion-quienes-somos .boton-contactenos {
+    grid-area: boton;
+  }
+  #top-seccion-quienes-somos {
+    grid-area: top-seccion;
+  }
+
+  /* SECCION PRODUCTO */
+
+  #seccion-producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
+  #seccion-producto h2 {
+    order: -1;
+  }
+  .tarjeta-caracteristica-producto img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .tarjeta-caracteristica-producto {
+    text-align: left;
+  }
+  .producto-impar {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .producto-par {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  #seccion-producto a {
+    margin: auto 0;
+  }
+  #seccion-producto a:hover {
+    transform: translateX(45px);
+    transition: all 600ms ease;
+  }
+
+  /* SECCION NUESTROS CLIENTES */
+
+  #seccion-nuestros-clientes {
+    display: flex;
+  }
+  #carrousel-clientes {
+    width: 50%;
+  }
+
+  #div-texto-seccion-nuestros-clientes {
+    width: 50%;
+  }
+
+  #seccion-nuestros-clientes #boton-ver-todos-desktop {
+    display: inline-block;
+    margin: 15px 0 0 50px;
+  }
+  #seccion-nuestros-clientes a {
+    display: none;
+  }
+  #seccion-nuestros-clientes .padding-0-20 {
+    padding-right: 10px;
+  }
+
+  /* SECCION SERVICIO TECNICO */
+  #seccion-servicio-tecnico {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #top-seccion-servicio-tecnico {
+    width: 100%;
+  }
+  #seccion-servicio-tecnico #contenedor-imagen {
+    display: block;
+    width: 40%;
+    background-color: var(--azul);
+    padding: 35px 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  #contenedor-imagen img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  #seccion-servicio-tecnico-texto {
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+  #seccion-servicio-tecnico-texto > img {
+    display: none;
+  }
+
+  #seccion-servicio-tecnico a:hover {
+    transform: translateX(45px);
+    transition: all 600ms ease;
+  }
+
+  /* SECCION CONTACTO */
+  #contenedor-decorativo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  #seccion-contacto-texto > img {
+    display: none;
+  }
+  #div-datos-de-contacto > img {
+    display: block;
+    width: 50%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  #seccion-contacto-texto {
+    order: 10;
+    width: 55%;
+    padding: 0 15px;
+  }
+  #seccion-contacto #div-datos-de-contacto {
+    order: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 45%;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 35px 50px 0px 50px;
+  }
 }
 
+/* SUPERIOR A 1024px */
+@media (min-width: 1024px) {
+  /* ESTANDARIZACIONES GENERALES */
+
+  :root {
+    font-size: 70%;
+  }
+  .linea-superior-seccion {
+    top: -182px;
+  }
+
+  /* SECCION INICIO */
+  #circulo-decorativo-grande {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
+
+  #seccion-inicio {
+    max-width: 1440px;
+  }
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0px;
+  }
+  #seccion-inicio .boton-contactenos {
+    margin: 20px 0 0 50px;
+  }
+
+  /* SECCION NUESTROS CLIENTES */
+  #div-texto-seccion-nuestros-clientes .padding-0-20 {
+    padding: 0 15px 0 0;
+  }
+
+  #seccion-nuestros-clientes #boton-ver-todos-desktop {
+    margin-left: 0px;
+  }
+  /* FOOTER */
+  footer h6 {
+    margin-top: 0px;
+  }
+  #div-leyenda-empresa {
+    width: 40%;
+    box-sizing: border-box;
+    padding-right: 30px;
+  }
+  #div-leyenda-empresa p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  #div-leyenda-empresa > p b {
+    font-size: 1.4rem;
+  }
+  .width-1-de-3 {
+    width: 20%;
+    box-sizing: border-box;
+  }
+  #div-accesos-rapidos {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #seccion-inicio {
+    padding-top: 170px;
+  }
+  #div-h1 {
+    width: 40%;
+  }
+  #container-img-forma-trapecio {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #circulo-decorativo-grande {
+    width: 250px;
+    height: 250px;
+    top: -20%;
+    right: 2%;
+  }
+  #circulo-decorativo-mediano {
+    left: 3%;
+    width: 125px;
+    height: 125px;
+  }
+  #circulo-decorativo-chico {
+    width: 67px;
+    height: 67px;
+  }
+}
 /* Created by tarantinolucas®. */
