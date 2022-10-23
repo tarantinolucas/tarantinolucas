@@ -73,7 +73,7 @@ section {
 .linea-superior-seccion {
   visibility: hidden;
   position: relative;
-  top: -135px;
+  top: -131px;
 }
 
 /* HEADER */
@@ -92,6 +92,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--gris);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 #navbar-desktop {
@@ -103,11 +105,11 @@ nav {
 }
 
 .bandera-idioma img {
-  width: 35px;
+  width: 30px;
 }
 .bandera-idioma img:hover {
   transform: scale(1.2);
-  transition: all 600ms ease;
+  transition: all 500ms ease;
 }
 #nav-menu {
   width: auto;
@@ -116,7 +118,7 @@ nav {
 }
 
 #nav-menu:hover {
-  height: 35px;
+  transform: scale(1.15);
   transition: all 500ms ease;
 }
 
@@ -134,7 +136,7 @@ nav {
   background-color: var(--blanco);
   position: fixed;
   top: 88px;
-  transition: all 1500ms ease;
+  transition: all 1200ms ease;
   transform: translateX(100vw);
 }
 
@@ -161,7 +163,7 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 400ms ease-in;
+  transition: all 500ms ease-in;
   transform: scale(1.05);
 }
 #btn-menu {
@@ -172,7 +174,7 @@ nav {
   display: block;
   text-decoration: none;
   color: var(--azul);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
   padding: 12px;
   border-bottom: 1px solid var(--gris);
   border-left: 2px solid var(--azul);
@@ -183,13 +185,13 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 400ms ease-in;
+  transition: all 500ms ease-in;
   transform: scale(1.05);
 }
 
 #li-seleccion-idioma {
   color: var(--azul);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
   padding: 12px;
   border-left: 2px solid var(--azul);
   border-bottom: 1px solid var(--gris);
@@ -202,7 +204,7 @@ nav {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
   border-bottom: 1px solid var(--naranja);
-  transition: all 400ms ease-in;
+  transition: all 500ms ease-in;
   transform: scale(1.05);
 }
 
@@ -219,7 +221,7 @@ nav {
   width: 40px;
   height: auto;
   margin-bottom: -2px;
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 
 #menu-desplegable p {
@@ -323,8 +325,9 @@ h1 {
 }
 
 .boton-contactenos:hover {
+  transform: scale(1.05);
   background-color: var(--naranja);
-  transition: all 500ms ease; /* ATENCION!!! CREAR TRANSICION MAS DELICADA PARA LOS BOTONES */
+  transition: all 500ms ease;
 }
 
 /* FIN SECCION INICIO */
@@ -401,9 +404,10 @@ h1 {
   font-weight: 500;
   margin: 50px 0;
   display: inline-block;
-  transition: all 300ms ease;
 }
 #seccion-producto a:hover {
+  transform: translateX(30px);
+  transition: all 500ms ease;
   color: var(--naranja);
 }
 
@@ -539,11 +543,12 @@ h1 {
   box-sizing: border-box;
   margin-left: 20px;
   border: 1.5px solid var(--azul);
-  transition: all 300ms ease;
 }
 
 #seccion-nuestros-clientes a:hover {
+  transform: scale(1.05);
   color: var(--naranja);
+  transition: all 500ms ease;
   border: 1.5px solid var(--naranja);
 }
 #seccion-nuestros-clientes #boton-ver-todos-desktop {
@@ -572,10 +577,12 @@ h1 {
   color: var(--azul);
   font-weight: 500;
   display: inline-block;
-  transition: all 300ms ease;
+  transition: all 500ms ease;
   margin-top: 25px;
 }
 #seccion-servicio-tecnico a:hover {
+  transform: translateX(30px);
+  transition: all 500ms ease;
   color: var(--naranja);
 }
 
@@ -617,6 +624,11 @@ form > input::placeholder {
   color: #7c7c7c;
 }
 
+form > input:focus {
+  transform: scale(1.05);
+  transition: all 500ms ease;
+}
+
 textarea {
   border-radius: 5px;
   padding: 10px;
@@ -628,6 +640,10 @@ textarea {
 }
 textarea::placeholder {
   color: #7c7c7c;
+}
+textarea:focus {
+  transform: scale(1.05);
+  transition: all 500ms ease;
 }
 
 #seccion-contacto h5 {
@@ -650,20 +666,21 @@ textarea::placeholder {
 
 #div-botones-radio input {
   margin: 0 5px 0 0;
-  width: 13px;
+  width: 11px;
+  border: 0px;
 }
 
 #div-botones-radio label {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: flex;
   margin-bottom: 15px;
-  font-weight: 300;
+  font-weight: 200;
   margin-right: 10px;
   cursor: pointer;
 }
 #div-botones-radio label:hover {
   color: var(--naranja);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 
 form > button {
@@ -681,7 +698,8 @@ form > button {
 form > button:hover {
   background-color: var(--naranja);
   color: var(--blanco);
-  transition: all 400ms ease;
+  transform: scale(1.05);
+  transition: all 500ms ease;
 }
 
 #div-datos-de-contacto {
@@ -694,10 +712,12 @@ form > button:hover {
   align-items: center;
   margin-bottom: 15px;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 #div-datos-de-contacto a:hover {
+  transform: scale(1.05);
+  transition: all 500ms ease;
   color: var(--naranja);
-  transition: all 400ms ease;
 }
 #div-datos-de-contacto > img {
   display: none;
@@ -729,6 +749,11 @@ footer h6 {
   max-width: 200px;
 }
 
+#div-leyenda-empresa > a img:hover {
+  transform: scale(1.05);
+  transition: all 500ms ease;
+}
+
 #div-leyenda-empresa > p {
   color: var(--blanco);
   font-size: 1.4rem;
@@ -740,9 +765,6 @@ footer h6 {
   font-size: 1.6rem;
 }
 
-#div-accesos-rapidos {
-  padding: 0 20px;
-}
 #div-idioma {
   margin-bottom: 25px;
 }
@@ -757,7 +779,7 @@ footer h6 {
 
 .links-footer:hover {
   color: var(--naranja);
-  transition: all 300ms ease;
+  transition: all 500ms ease;
 }
 #div-idioma img {
   width: 30px;
@@ -765,7 +787,7 @@ footer h6 {
 }
 #div-idioma img:hover {
   transform: scale(1.2);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 #div-redes {
   margin-bottom: 45px;
@@ -778,7 +800,7 @@ footer h6 {
 
 #div-redes img:hover {
   transform: scale(1.2);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 
 #div-terminos-y-condiciones {
@@ -789,12 +811,18 @@ footer h6 {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 #div-terminos-y-condiciones a {
-  padding-right: 15px;
+  text-decoration: underline;
 }
+
 #div-terminos-y-condiciones span {
   margin: 0 10px;
+  font-size: 1.3rem;
+  color: var(--blanco);
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 #div-terminos-y-condiciones p {
   font-size: 1.2rem;
@@ -815,7 +843,7 @@ footer h6 {
 
 #link-whatsapp:hover {
   transform: scale(1.2);
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 
 /* ACA
@@ -849,10 +877,9 @@ MOBILE
   }
   footer {
     padding: 35px;
+    justify-content: space-between;
   }
-  .width-1-de-3 {
-    width: 30%;
-  }
+
   #div-leyenda-empresa p {
     width: 70%;
   }
@@ -867,7 +894,7 @@ MOBILE
     display: none;
   }
   .linea-superior-seccion {
-    top: -178px;
+    top: -175px;
   }
 
   .padding-0-20 {
@@ -916,7 +943,7 @@ MOBILE
   }
   #navbar-desktop a:hover {
     background-color: var(--naranja);
-    transition: all 600ms ease;
+    transition: all 500ms ease;
   }
 
   #navbar-desktop #link-contacto {
@@ -1040,10 +1067,6 @@ MOBILE
   #seccion-producto a {
     margin: auto 0;
   }
-  #seccion-producto a:hover {
-    transform: translateX(45px);
-    transition: all 600ms ease;
-  }
 
   /* SECCION NUESTROS CLIENTES */
 
@@ -1103,12 +1126,10 @@ MOBILE
     display: none;
   }
 
-  #seccion-servicio-tecnico a:hover {
-    transform: translateX(45px);
-    transition: all 600ms ease;
-  }
-
   /* SECCION CONTACTO */
+  #seccion-contacto {
+    padding: 0 50px;
+  }
   #contenedor-decorativo {
     margin: 0 auto;
     display: flex;
@@ -1144,14 +1165,12 @@ MOBILE
 /* SUPERIOR A 1024px */
 @media (min-width: 1024px) {
   /* ESTANDARIZACIONES GENERALES */
-
   :root {
-    font-size: 70%;
+    font-size: 68%;
   }
   .linea-superior-seccion {
-    top: -182px;
+    top: -199px;
   }
-
   /* SECCION INICIO */
   #circulo-decorativo-grande {
     width: 20vw;
@@ -1160,6 +1179,7 @@ MOBILE
   }
 
   #seccion-inicio {
+    min-height: 550px;
     max-width: 1440px;
   }
   h1 {
@@ -1169,8 +1189,15 @@ MOBILE
   #seccion-inicio .boton-contactenos {
     margin: 20px 0 0 50px;
   }
+  .linea-separacion-secciones {
+    width: 15%;
+    margin: 65px auto;
+  }
 
   /* SECCION NUESTROS CLIENTES */
+  #seccion-nuestros-clientes {
+    padding: 0 50px;
+  }
   #div-texto-seccion-nuestros-clientes .padding-0-20 {
     padding: 0 15px 0 0;
   }
@@ -1230,4 +1257,5 @@ MOBILE
     height: 67px;
   }
 }
+
 /* Created by tarantinolucas®. */
