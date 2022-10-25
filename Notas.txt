@@ -1,12 +1,23 @@
 <----- NOTAS DEL PROYECTO ----->
 
+Tenemos que seguir trabajando:
+
+1- En que el menu se cierre al tocar cualquier parte del documento, que no sea el propio menu.
+
+2- En agregar un captcha para enviar el formulario.
+
+3- En el destino del formulario al apretar el boton "Enviar", para que lo envie al mail de E&M 	IMPORTANTE!!!
+
+4- En la traduccion al ingles de la pagina.
+
+5- En la optimizacion del codigo y las imagenes, para tener el menor peso posible, y mejorar la experiencia de usuario.
 
 
+*https y validacion front end
+*gogle analitycs
 
-
-
-Aca se escriben las anotaciones del proyecto a realizar. 
-
+1- reviso producto
+2- anoto lo que no me gusta o que este roto
 
 
 
