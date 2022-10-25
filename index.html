@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Equipamiento médico para cuidados críticos de Industria Nacional">
+    <meta name="keywords" content="equipamiento medico, industria medica, desfibriladores, desfibrilador bifasico">
     <title>E&M Electromedicina</title>
     <!-- ICONO DE PESTAÑA -->
     <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon" />
@@ -28,7 +30,7 @@
           /></a>
         </div>
         <a href="./index-EN.html" class="bandera-idioma"
-          ><img src="./img/estados-unidos.png" alt="bandera de Estados Unidos"
+          ><img src="./img/reino-unido.png" alt="bandera de Reino unido"
         /></a>
         <label for="btn-menu">
           <img id="nav-menu" src="./img/menu.png" />
@@ -90,7 +92,7 @@
           <div id="circulo-decorativo-chico"></div>
           <div id="container-img-forma-trapecio" class="padding-0-20">
             <img
-              src="./img/producto-inicio.png"
+              src="./img/producto-inicio.jpg"
               alt="Imagen del producto principal"
             />
           </div>
@@ -336,27 +338,25 @@
       <section id="seccion-contacto">
         <div id="top-seccion-contacto" class="linea-superior-seccion"></div>
         <div id="contenedor-decorativo">
-          <div id="forma-decorativa-1"></div>
-          <div id="forma-decorativa-2"></div>
           <div id="seccion-contacto-texto">
             <h2>Contacto</h2>
             <img src="./img/email.png" alt="imagen-decorativa-contacto" />
-            <form
-              action="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
-            >
+            <form id="form" action="" method="">
               <input
                 type="text"
                 placeholder="Nombre y apellido o razon social"
                 required
+                name="name"
               />
-              <input type="tel" placeholder="Teléfono" required />
+              <input type="tel" placeholder="Teléfono" required name="phone" />
               <input
                 type="email"
                 placeholder="Dirección de correo electrónico"
                 required
+                name="email"
               />
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="5"
@@ -369,6 +369,7 @@
                     type="radio"
                     id="radio-cotizacion"
                     name="tipo-de-contacto"
+                    value="cotizacion"
                   />
                   Cotización</label
                 >
@@ -377,6 +378,7 @@
                     type="radio"
                     id="radio-servicio-tecnico"
                     name="tipo-de-contacto"
+                    value="servicio-tecnico"
                   />
                   Servicio técnico</label
                 >
@@ -385,19 +387,20 @@
                     type="radio"
                     id="radio-otras-consultas"
                     name="tipo-de-contacto"
+                    value="otra-consulta"
                     checked
                   />
                   Otras consultas</label
                 >
               </div>
-              <button type="submit">Enviar</button>
+              <button id="submit" type="submit">Enviar</button>
+              <a id="buttonSubmit" href="mailo:info@eym.com.ar">buttonSubmit</a>
             </form>
           </div>
           <div id="div-datos-de-contacto">
             <img src="./img/email.png" alt="imagen-decorativa-contacto" />
             <h5>Contáctenos</h5>
-            <a
-              href="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
+            <a href="mailto:info@eym.com.ar"
               ><img
                 src="./img/email2.png"
                 alt="imagen-sobre"
@@ -451,8 +454,8 @@
         /></a>
         <a class="links-footer" href="./index-EN.html"
           >Ingles<img
-            src="./img/estados-unidos.png"
-            alt="bandera de Estados Unidos"
+            src="./img/reino-unido.png"
+            alt="bandera de Reino unido"
         /></a>
       </div>
       <div id="div-accesos-rapidos" class="width-1-de-3">
@@ -471,9 +474,7 @@
       </div>
       <div id="div-datos-de-contacto" class="width-1-de-3">
         <h6>Contáctenos</h6>
-        <a
-          class="links-footer"
-          href="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
+        <a class="links-footer" href="mailto:info@eym.com.ar"
           ><img src="./img/email2.png" alt="imagen-sobre" />info@eym.com.ar</a
         >
         <a
@@ -521,6 +522,7 @@
         ><img src="./img/whatsapp.png" alt="logo-whatsapp"
       /></a>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
 
