@@ -87,6 +87,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "DIN Pro";
   src: url("./assets/DINPro-Regular.woff") format("woff");
@@ -201,6 +202,7 @@ nav {
 #navbar-desktop {
   display: none;
 }
+
 #nav-logo {
   width: auto;
   height: 45px;
@@ -209,10 +211,12 @@ nav {
 .bandera-idioma img {
   width: 30px;
 }
+
 .bandera-idioma img:hover {
   transform: scale(1.2);
   transition: all 500ms ease;
 }
+
 #nav-menu {
   width: auto;
   height: 30px;
@@ -242,7 +246,7 @@ nav {
   transform: translateX(100vw);
 }
 
-#btn-menu:checked + #menu-desplegable ul {
+#btn-menu:checked+#menu-desplegable ul {
   transform: translateX(20vw);
 }
 
@@ -268,11 +272,12 @@ nav {
   transition: all 500ms ease-in;
   transform: scale(1.05);
 }
+
 #btn-menu {
   display: none;
 }
 
-#menu-desplegable ul > a {
+#menu-desplegable ul>a {
   display: block;
   text-decoration: none;
   color: var(--azul);
@@ -283,6 +288,7 @@ nav {
   margin-bottom: 3px;
   background-color: var(--blanco);
 }
+
 #menu-desplegable a:hover {
   color: var(--naranja);
   border-left: 3px solid var(--naranja);
@@ -319,6 +325,7 @@ nav {
   width: 35px;
   margin: 10px 10px 3px 10px;
 }
+
 #menu-desplegable img:hover {
   width: 40px;
   height: auto;
@@ -345,9 +352,11 @@ nav {
   background-attachment: scroll;
   background-size: cover;
 }
+
 #div-h1 {
   padding-top: 25px;
 }
+
 h1 {
   font-size: 3.4rem;
   font-weight: 500;
@@ -360,17 +369,15 @@ h1 {
 #seccion-inicio img {
   display: block;
   width: 100%;
-  max-width: 700px; 
+  max-width: 700px;
   box-sizing: border-box;
-  margin: 45px 0px;
-  opacity: 0.9;  
-  border-radius: 30%;
+  margin-top: 45px;  
 }
 
 #seccion-inicio .boton-contactenos {
-  margin-left: 20px;
   order: 3;
-  margin-bottom: 25px;
+  margin: -90px auto 25px 20px;
+  z-index: 10;
 }
 
 /* BOTON DE CONTACTENOS */
@@ -426,6 +433,7 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 #seccion-quienes-somos .div-caracteristicas-marca img {
   width: 56px;
   height: 56px;
@@ -472,6 +480,7 @@ h1 {
   margin: 50px 0;
   display: inline-block;
 }
+
 #seccion-producto a:hover {
   transform: translateX(30px);
   transition: all 500ms ease;
@@ -490,6 +499,7 @@ h1 {
 #carrousel-clientes {
   margin: 80px 0px;
 }
+
 #carrusel-caja {
   animation: automatizacion 40s infinite linear;
   transition: all 0.75s ease;
@@ -497,11 +507,13 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 #carrusel-contenido {
   margin: 0 auto;
   overflow: hidden;
   text-align: left;
 }
+
 .imagenes {
   height: auto;
   width: 50%;
@@ -509,6 +521,7 @@ h1 {
   margin: 0 auto;
   max-width: 250px;
 }
+
 .carrusel-elemento {
   float: left;
   width: 10%;
@@ -618,6 +631,7 @@ h1 {
   transition: all 500ms ease;
   border: 1.5px solid var(--naranja);
 }
+
 #seccion-nuestros-clientes #boton-ver-todos-desktop {
   display: none;
 }
@@ -628,7 +642,7 @@ h1 {
   display: none;
 }
 
-#seccion-servicio-tecnico-texto > img {
+#seccion-servicio-tecnico-texto>img {
   width: 50px;
   height: 50px;
   margin-top: 25px;
@@ -647,6 +661,7 @@ h1 {
   transition: all 500ms ease;
   margin-top: 25px;
 }
+
 #seccion-servicio-tecnico a:hover {
   transform: translateX(30px);
   transition: all 500ms ease;
@@ -668,7 +683,8 @@ h1 {
   color: var(--blanco);
   margin-bottom: 35px;
 }
-#seccion-contacto-texto > img {
+
+#seccion-contacto-texto>img {
   width: 25%;
   margin-bottom: 25px;
   max-width: 65px;
@@ -679,7 +695,7 @@ form {
   flex-direction: column;
 }
 
-form > input {
+form>input {
   border-radius: 5px;
   margin-bottom: 13px;
   padding: 10px;
@@ -687,11 +703,11 @@ form > input {
   font-family: "Netto Pro", "Inter", sans-serif;
 }
 
-form > input::placeholder {
+form>input::placeholder {
   color: #7c7c7c;
 }
 
-form > input:focus {
+form>input:focus {
   transform: scale(1.05);
   transition: all 500ms ease;
 }
@@ -705,9 +721,11 @@ textarea {
   height: 150px;
   overflow-y: visible;
 }
+
 textarea::placeholder {
   color: #7c7c7c;
 }
+
 textarea:focus {
   transform: scale(1.05);
   transition: all 500ms ease;
@@ -724,6 +742,7 @@ textarea:focus {
 #seccion-contacto a {
   color: var(--blanco);
 }
+
 #div-botones-radio {
   display: flex;
   align-items: center;
@@ -745,12 +764,13 @@ textarea:focus {
   margin-right: 10px;
   cursor: pointer;
 }
+
 #div-botones-radio label:hover {
   color: var(--naranja);
   transition: all 500ms ease;
 }
 
-form > button {
+form>button {
   font-family: "Netto Pro", "Inter", sans-serif;
   font-size: 1.3rem;
   padding: 12px 32px;
@@ -762,7 +782,7 @@ form > button {
   font-weight: 500;
 }
 
-form > button:hover {
+form>button:hover {
   background-color: var(--naranja);
   color: var(--blanco);
   transform: scale(1.05);
@@ -781,18 +801,22 @@ form > button:hover {
   font-size: 1.3rem;
   font-weight: 300;
 }
+
 #div-datos-de-contacto a:hover {
   transform: scale(1.05);
   transition: all 500ms ease;
   color: var(--naranja);
 }
-#div-datos-de-contacto > img {
+
+#div-datos-de-contacto>img {
   display: none;
 }
+
 #div-datos-de-contacto img {
   width: 20px;
   margin-right: 10px;
 }
+
 /* FOOTER */
 footer {
   background-color: var(--azul);
@@ -810,31 +834,32 @@ footer h6 {
   margin: 15px 0px;
 }
 
-#div-leyenda-empresa > a img {
+#div-leyenda-empresa>a img {
   width: 50%;
   height: auto;
   max-width: 200px;
 }
 
-#div-leyenda-empresa > a img:hover {
+#div-leyenda-empresa>a img:hover {
   transform: scale(1.05);
   transition: all 500ms ease;
 }
 
-#div-leyenda-empresa > p {
+#div-leyenda-empresa>p {
   color: var(--blanco);
   font-size: 1.4rem;
   line-height: 2.3rem;
   font-weight: 300;
 }
 
-#div-leyenda-empresa > p b {
+#div-leyenda-empresa>p b {
   font-size: 1.6rem;
 }
 
 #div-idioma {
   margin-bottom: 25px;
 }
+
 .links-footer {
   display: flex;
   align-items: center;
@@ -848,18 +873,22 @@ footer h6 {
   color: var(--naranja);
   transition: all 500ms ease;
 }
+
 #div-idioma img {
   width: 30px;
   margin-left: 20px;
 }
+
 #div-idioma img:hover {
   transform: scale(1.2);
   transition: all 500ms ease;
 }
+
 #div-redes {
   margin-bottom: 45px;
   width: 100%;
 }
+
 #div-redes img {
   width: 30px;
   margin-right: 25px;
@@ -873,6 +902,7 @@ footer h6 {
 #div-terminos-y-condiciones {
   margin-top: 45px;
 }
+
 #div-terminos-y-condiciones ul {
   list-style: none;
   padding: 0;
@@ -880,6 +910,7 @@ footer h6 {
   flex-wrap: wrap;
   align-items: center;
 }
+
 #div-terminos-y-condiciones a {
   text-decoration: underline;
 }
@@ -891,6 +922,7 @@ footer h6 {
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 #div-terminos-y-condiciones p {
   font-size: 1.2rem;
   color: var(--blanco);
@@ -933,15 +965,19 @@ MOBILE
   .padding-0-20 {
     padding: 0 35px;
   }
+
   #seccion-inicio .boton-contactenos {
     margin-left: 35px;
   }
+
   #contenedor-decorativo {
     padding: 35px;
   }
+
   nav {
     padding: 20px 35px;
   }
+
   footer {
     padding: 35px;
     justify-content: space-between;
@@ -950,16 +986,20 @@ MOBILE
   #div-leyenda-empresa p {
     width: 70%;
   }
+
   #contenedor-decorativo {
     margin: 0 35px;
   }
 }
+
 /* DESDE 768px a 1024px */
 @media (min-width: 768px) {
+
   /* ESTANDARIZACIONES GENERALES */
   #menu-desplegable ul {
     display: none;
   }
+
   .linea-superior-seccion {
     top: -175px;
   }
@@ -967,6 +1007,7 @@ MOBILE
   .padding-0-20 {
     padding: 0 50px;
   }
+
   nav {
     padding: 20px 50px;
     border: none;
@@ -996,6 +1037,7 @@ MOBILE
     border-bottom: 1px solid var(--blanco);
     width: 100%;
   }
+
   #navbar-desktop a {
     text-align: center;
     text-transform: uppercase;
@@ -1008,6 +1050,7 @@ MOBILE
     border-right: 1px solid var(--blanco);
     flex-grow: 1;
   }
+
   #navbar-desktop a:hover {
     background-color: var(--naranja);
     transition: all 500ms ease;
@@ -1030,12 +1073,15 @@ MOBILE
     justify-content: center;
     padding: auto;
   }
+
   #container-decorativo-producto-inicio {
     margin-bottom: 0;
   }
+
   #circulo-decorativo-grande {
     top: -20%;
   }
+
   #circulo-decorativo-mediano {
     width: 10vw;
     height: 10vw;
@@ -1053,12 +1099,15 @@ MOBILE
   #div-h1 {
     width: 60%;
   }
+
   #seccion-inicio .boton-contactenos {
     margin: 100px 0 0 50px;
   }
+
   #boton-inicio-desktop {
     display: block;
   }
+
   #boton-inicio-mobile {
     display: none;
   }
@@ -1075,32 +1124,40 @@ MOBILE
       "img div-compromiso"
       "img boton";
   }
-  #seccion-quienes-somos > img {
+
+  #seccion-quienes-somos>img {
     grid-area: img;
     padding-right: 20px;
     box-sizing: border-box;
     align-self: center;
   }
+
   #seccion-quienes-somos h2 {
     grid-area: h2;
   }
+
   #seccion-quienes-somos p {
     grid-area: p;
   }
+
   #div-calidad {
     grid-area: div-calidad;
   }
+
   #div-compromiso {
     grid-area: div-compromiso;
     margin-bottom: 15px;
   }
+
   #seccion-quienes-somos .div-caracteristicas-marca img {
     width: 50px;
     height: 50px;
   }
+
   #seccion-quienes-somos .boton-contactenos {
     grid-area: boton;
   }
+
   #top-seccion-quienes-somos {
     grid-area: top-seccion;
   }
@@ -1112,25 +1169,31 @@ MOBILE
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
   }
+
   #seccion-producto h2 {
     order: -1;
   }
+
   .tarjeta-caracteristica-producto img {
     width: 100%;
     margin-right: auto;
     margin-left: 0;
   }
+
   .tarjeta-caracteristica-producto {
     text-align: left;
   }
+
   .producto-impar {
     margin-top: 50px;
     margin-bottom: 0px;
   }
+
   .producto-par {
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   #seccion-producto a {
     margin: auto 0;
   }
@@ -1140,6 +1203,7 @@ MOBILE
   #seccion-nuestros-clientes {
     display: flex;
   }
+
   #carrousel-clientes {
     width: 50%;
   }
@@ -1152,9 +1216,11 @@ MOBILE
     display: inline-block;
     margin: 15px 0 0 50px;
   }
+
   #seccion-nuestros-clientes a {
     display: none;
   }
+
   #seccion-nuestros-clientes .padding-0-20 {
     padding-right: 10px;
   }
@@ -1165,9 +1231,11 @@ MOBILE
     align-items: center;
     flex-wrap: wrap;
   }
+
   #top-seccion-servicio-tecnico {
     width: 100%;
   }
+
   #seccion-servicio-tecnico #contenedor-imagen {
     display: block;
     width: 40%;
@@ -1189,7 +1257,8 @@ MOBILE
     box-sizing: border-box;
     padding-left: 30px;
   }
-  #seccion-servicio-tecnico-texto > img {
+
+  #seccion-servicio-tecnico-texto>img {
     display: none;
   }
 
@@ -1197,25 +1266,30 @@ MOBILE
   #seccion-contacto {
     padding: 0 50px;
   }
+
   #contenedor-decorativo {
     margin: 0 auto;
     display: flex;
     align-items: center;
   }
-  #seccion-contacto-texto > img {
+
+  #seccion-contacto-texto>img {
     display: none;
   }
-  #div-datos-de-contacto > img {
+
+  #div-datos-de-contacto>img {
     display: block;
     width: 50%;
     max-width: 100px;
     margin: 0 auto;
   }
+
   #seccion-contacto-texto {
     order: 10;
     width: 55%;
     padding: 0 15px;
   }
+
   #seccion-contacto #div-datos-de-contacto {
     order: 1;
     padding: 15px;
@@ -1231,13 +1305,16 @@ MOBILE
 
 /* SUPERIOR A 1024px */
 @media (min-width: 1024px) {
+
   /* ESTANDARIZACIONES GENERALES */
   :root {
     font-size: 68%;
   }
+
   .linea-superior-seccion {
     top: -199px;
   }
+
   /* SECCION INICIO */
   #circulo-decorativo-grande {
     width: 20vw;
@@ -1249,13 +1326,16 @@ MOBILE
     min-height: 550px;
     max-width: 1440px;
   }
+
   h1 {
     font-size: 4.5rem;
     margin-bottom: 0px;
   }
+
   #seccion-inicio .boton-contactenos {
     margin: 20px 0 0 50px;
   }
+
   .linea-separacion-secciones {
     width: 15%;
     margin: 65px auto;
@@ -1265,6 +1345,7 @@ MOBILE
   #seccion-nuestros-clientes {
     padding: 0 50px;
   }
+
   #div-texto-seccion-nuestros-clientes .padding-0-20 {
     padding: 0 15px 0 0;
   }
@@ -1272,26 +1353,32 @@ MOBILE
   #seccion-nuestros-clientes #boton-ver-todos-desktop {
     margin-left: 0px;
   }
+
   /* FOOTER */
   footer h6 {
     margin-top: 0px;
   }
+
   #div-leyenda-empresa {
     width: 40%;
     box-sizing: border-box;
     padding-right: 30px;
   }
+
   #div-leyenda-empresa p {
     width: 100%;
     font-size: 1.3rem;
   }
-  #div-leyenda-empresa > p b {
+
+  #div-leyenda-empresa>p b {
     font-size: 1.4rem;
   }
+
   .width-1-de-3 {
     width: 20%;
     box-sizing: border-box;
   }
+
   #div-accesos-rapidos {
     padding: 0;
   }
@@ -1301,32 +1388,39 @@ MOBILE
   #seccion-inicio {
     padding-top: 170px;
   }
+
   #div-h1 {
     width: 40%;
   }
+
   #container-img-forma-trapecio {
     width: 70%;
     margin: 0 auto;
   }
+
   #circulo-decorativo-grande {
     width: 250px;
     height: 250px;
     top: -20%;
     right: 2%;
   }
+
   #circulo-decorativo-mediano {
     left: 3%;
     width: 125px;
     height: 125px;
   }
+
   #circulo-decorativo-chico {
     width: 67px;
     height: 67px;
   }
 }
+
 /* PROBANDO */
 
 #buttonSubmit {
   visibility: hidden;
 }
+
 /* Created by tarantinolucas®. */

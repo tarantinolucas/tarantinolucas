@@ -340,7 +340,9 @@
           <div id="seccion-contacto-texto">
             <h2>Contacto</h2>
             <img src="./img/email.png" alt="imagen-decorativa-contacto" />
-            <form id="form" action="" method="">
+            <form id="form" action="forms/wcaFm.php" method="POST">
+              <input type="hidden" name="recipient" value="info@eym.com.ar">
+              <input type="hidden" name="redirect" value="https://tarantinolucas.github.io/tarantinolucas/">
               <input
                 type="text"
                 placeholder="Nombre y apellido o razon social"
