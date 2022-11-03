@@ -1,4 +1,110 @@
+/* FUENTES */
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  src: url("./assets/DINPro-MediumCondensed.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Pro";
+  src: url("./assets/DINPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  src: url("./assets/DINPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* FUENTE INTER */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -7,11 +113,7 @@
 :root {
   font-size: 62.5%;
   /* Colocar la fuente exportada */
-  font-family: "Inter", sans-serif;
-  /* Colocar 
-    variables de colores 
-    principales 
-    elegidos */
+  font-family: "Netto Pro", "Inter", sans-serif;
   --azul: #004a96;
   --gris: #e1e1e1;
   --naranja: #ff9900;
@@ -234,76 +336,41 @@ nav {
 
 /* TITULO PRINCIPAL */
 #seccion-inicio {
-  padding-top: 120px;
+  padding-top: 88px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background-image: url(./img/bg-portada.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
-
+#div-h1 {
+  padding-top: 25px;
+}
 h1 {
-  font-size: 3.2rem;
-  font-weight: 800;
+  font-size: 3.4rem;
+  font-weight: 500;
   color: var(--azul);
-  margin-top: 0;
-}
-
-#seccion-inicio p {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 35px;
+  margin: 0;
 }
 
 /* CONTENEDOR IMAGEN DEL PRODUCTO DE INICIO */
 
-#container-img-forma-trapecio {
-  clip-path: polygon(0 0, 100% 10%, 100% 95%, 0% 100%);
-}
-
-#container-decorativo-producto-inicio {
-  position: relative;
-  margin-bottom: 55px;
-  overflow-x: none;
-}
-
 #seccion-inicio img {
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 700px; 
+  box-sizing: border-box;
+  margin: 45px 0px;
+  opacity: 0.9;  
+  border-radius: 30%;
 }
 
 #seccion-inicio .boton-contactenos {
   margin-left: 20px;
   order: 3;
-}
-
-#circulo-decorativo-grande {
-  width: 20%;
-  height: 60%;
-  background-color: var(--azul);
-  position: absolute;
-  right: 0;
-  top: -10%;
-  border-radius: 5000px 0 0 5000px;
-}
-#circulo-decorativo-mediano {
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  background-color: var(--azul);
-  position: absolute;
-  left: -5%;
-  top: 35%;
-}
-
-#circulo-decorativo-chico {
-  width: 13vw;
-  height: 13vw;
-  border-radius: 50%;
-  background-color: var(--azul);
-  position: absolute;
-  left: 50%;
-  bottom: -7%;
+  margin-bottom: 25px;
 }
 
 /* BOTON DE CONTACTENOS */
@@ -313,7 +380,7 @@ h1 {
 
 .boton-contactenos {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--blanco);
   background-color: var(--azul);
   padding: 12px 32px;
@@ -343,7 +410,7 @@ h1 {
 /* SECCION QUIENES SOMOS */
 
 #seccion-quienes-somos p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
 }
@@ -617,7 +684,7 @@ form > input {
   margin-bottom: 13px;
   padding: 10px;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Netto Pro", "Inter", sans-serif;
 }
 
 form > input::placeholder {
@@ -632,7 +699,7 @@ form > input:focus {
 textarea {
   border-radius: 5px;
   padding: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "Netto Pro", "Inter", sans-serif;
   margin-bottom: 15px;
   resize: none;
   height: 150px;
@@ -684,7 +751,7 @@ textarea:focus {
 }
 
 form > button {
-  font-family: "Inter", sans-serif;
+  font-family: "Netto Pro", "Inter", sans-serif;
   font-size: 1.3rem;
   padding: 12px 32px;
   background-color: var(--blanco);
