@@ -47,7 +47,6 @@
           <a href="#seccion-inicio"><li>Home</li></a>
           <a href="#top-seccion-quienes-somos"><li>About us</li></a>
           <a href="#top-seccion-producto"><li>Product</li></a>
-          <a href="#top-seccion-nuestros-clientes"><li>Our customers</li></a>
           <a href="#top-seccion-servicio-tecnico"><li>Technical service</li></a>
           <a id="link-contacto" href="#top-seccion-contacto"
             ><li>Contact us</li></a
@@ -61,8 +60,7 @@
         <a href="#seccion-inicio"><li>Home</li></a>
         <a href="#top-seccion-quienes-somos"><li>About us</li></a>
         <a href="#top-seccion-producto"><li>Product</li></a>
-        <a href="#top-seccion-nuestros-clientes"><li>Our customers</li></a>
-        <a href="#top-seccion-servicio-tecnico"><li>Technical service</li></a>
+          <a href="#top-seccion-servicio-tecnico"><li>Technical service</li></a>
         <a href="#top-seccion-contacto"><li>Contact us</li></a>
         <!-- <li id="li-seleccion-idioma">
           <p>Seleccionar idioma</p>
@@ -119,7 +117,7 @@
           and care of patients at the moments they need it most.
         </p>
         <img
-          src="./img/quienes-somos-portada.png"
+          src="./img/producto.png"
           alt="Imagen representativa de la empresa"
         />
         <!-- DIV CALIDAD -->
@@ -165,6 +163,7 @@
       <section id="seccion-producto" class="padding-0-20">
         <div id="top-seccion-producto" class="linea-superior-seccion"></div>
         <h2>Product</h2>
+        <img src="./img/producto.png" alt="Imagen de desfibrilador C-15" />
         <div class="tarjeta-caracteristica-producto producto-impar">
           <img src="./img/onda bifasica.png" alt="imagen onda bifasica" />
           <h5>Bifasico</h5>
@@ -242,63 +241,7 @@
         >
       </section>
 
-      <div class="linea-separacion-secciones"></div>
-
-      <!-- SECCION NUESTROS CLIENTES -->
-      <section id="seccion-nuestros-clientes">
-        <div
-          id="top-seccion-nuestros-clientes"
-          class="linea-superior-seccion"
-        ></div>
-        <div id="div-texto-seccion-nuestros-clientes">
-          <h2 class="padding-0-20">Our customers</h2>
-          <h3 class="padding-0-20">1000+</h3>
-          <p class="padding-0-20">
-            Clients among which are, public institutions, private and emergency
-            medical systems that use the E&M critical care medical products.
-          </p>
-          <a href="#" id="boton-ver-todos-desktop">See more ➜</a>
-        </div>
-        <div id="carrousel-clientes">
-          <div id="carrusel-contenido">
-            <div id="carrusel-caja">
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-1.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-2.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-3.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-4.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-5.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-6.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-7.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-8.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-9.png" />
-              </div>
-              <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/nuestros-clientes-1.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" id="boton-ver-todos-mobile">See more ➜</a>
-      </section>
-
-      <div class="linea-separacion-secciones"></div>
+      <div class="linea-separacion-secciones"></div>      
 
       <!-- SECCION SERVICIO TECNICO -->
       <section id="seccion-servicio-tecnico" class="padding-0-20">
@@ -334,23 +277,31 @@
       <section id="seccion-contacto">
         <div id="top-seccion-contacto" class="linea-superior-seccion"></div>
         <div id="contenedor-decorativo">
-          <div id="forma-decorativa-1"></div>
-          <div id="forma-decorativa-2"></div>
           <div id="seccion-contacto-texto">
             <h2>Contact us</h2>
             <img src="./img/email.png" alt="imagen-decorativa-contacto" />
-            <form
-              action="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
-            >
+            <form action="forms/wcaFm.php" method="POST">
+              <input type="hidden" name="recipient" value="info@eym.com.ar" />
+              <input
+                type="hidden"
+                name="redirect"
+                value="http://127.0.0.1:5500/index.html"
+              />
               <input
                 type="text"
                 placeholder="Name and lastname or business name"
                 required
+                name="name"
               />
-              <input type="tel" placeholder="Telephone" required />
-              <input type="email" placeholder="Email address" required />
+              <input type="tel" placeholder="Telephone" required name="phone" />
+              <input
+                type="email"
+                placeholder="Email address"
+                required
+                name="email"
+              />
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="5"
@@ -452,9 +403,6 @@
         <a class="links-footer" href="#seccion-inicio">Home</a>
         <a class="links-footer" href="#top-seccion-quienes-somos">About us</a>
         <a class="links-footer" href="#top-seccion-producto">Product</a>
-        <a class="links-footer" href="#top-seccion-nuestros-clientes"
-          >Our customers</a
-        >
         <a class="links-footer" href="#top-seccion-servicio-tecnico"
           >Technical service</a
         >
