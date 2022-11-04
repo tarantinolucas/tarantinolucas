@@ -432,17 +432,6 @@ h1 {
   max-width: 520px;
 }
 
-.div-caracteristicas-marca {
-  display: flex;
-  align-items: center;
-}
-
-#seccion-quienes-somos .div-caracteristicas-marca img {
-  width: 56px;
-  height: 56px;
-  margin-right: 10px;
-}
-
 .boton-politica-de-calidad {
   font-size: 1.6rem;
   color: var(--azul);
@@ -463,9 +452,10 @@ h1 {
 }
 .div-certificaciones img {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 15%;
+  height: 15%;
   margin-right: 10px;
+  max-width: 90px;
 }
 
 .div-certificaciones ul a {
@@ -476,9 +466,42 @@ h1 {
   text-decoration: underline;
 }
 
-.div-certificaciones ul a:hover {  
+.div-certificaciones ul a:hover {
   transition: all 500ms ease;
   color: var(--naranja);
+}
+.div-caracteristicas-marca {
+  display: flex;
+  align-items: center;
+}
+.introduccion-calidad {
+  display: flex;
+  align-items: center;
+}
+
+#seccion-quienes-somos .div-caracteristicas-marca img {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+#div-calidad {
+  display: flex;
+  flex-direction: column;
+}
+
+#div-politica-de-calidad {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+#div-politica-de-calidad li {
+  margin-bottom: 15px;
+}
+
+#seccion-quienes-somos .boton-contactenos {
+  align-self: flex-start;
+  margin: 25px 0px;
 }
 
 /* SECCION PRODUCTO */
@@ -488,23 +511,36 @@ h1 {
   width: 100%;
   margin: 40px auto;
 }
+#seccion-producto > p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin: 0px auto 50px auto;
+}
 
 .tarjeta-caracteristica-producto {
   margin-top: 30px;
   margin-bottom: 70px;
 }
+.tarjeta-caracteristica-producto h5 {
+  font-family: "DIN Pro";
+  margin-bottom: 0px;
+  font-size: 1.7rem;
+}
 
 .tarjeta-caracteristica-producto img {
   display: block;
-  width: 65%;
+  width: 60%;
   margin-top: 15px;
   border-radius: 8px;
   max-width: 280px;
 }
 
 .tarjeta-caracteristica-producto p {
-  font-size: 1.4rem;
-  line-height: 2.3rem;
+  font-family: "DIN Pro";
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
   margin: 0;
 }
 
@@ -542,12 +578,21 @@ h1 {
   margin-top: 25px;
 }
 
+#seccion-servicio-tecnico-texto ul {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+#seccion-servicio-tecnico-texto li {
+  margin-bottom: 7px;
+}
+
 #seccion-servicio-tecnico p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.3rem;
 }
 
-#seccion-servicio-tecnico a {
+/* #seccion-servicio-tecnico a {
   font-size: 1.6rem;
   color: var(--azul);
   font-weight: 500;
@@ -560,6 +605,13 @@ h1 {
   transform: translateX(30px);
   transition: all 500ms ease;
   color: var(--naranja);
+} */
+#seccion-servicio-tecnico h5 {
+  color: black;
+}
+#seccion-servicio-tecnico #div-datos-de-contacto a {
+  font-size: 1.4rem;
+  font-weight: normal;
 }
 
 /* SECCION CONTACTO */
@@ -595,6 +647,7 @@ form > input {
   padding: 10px;
   border: none;
   font-family: "Netto Pro", "Inter", sans-serif;
+  font-size: 1.4rem;
 }
 
 form > input::placeholder {
@@ -614,6 +667,7 @@ textarea {
   resize: none;
   height: 150px;
   overflow-y: visible;
+  font-size: 1.4rem;
 }
 
 textarea::placeholder {
@@ -666,7 +720,7 @@ textarea:focus {
 
 form > button {
   font-family: "Netto Pro", "Inter", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding: 12px 32px;
   background-color: var(--blanco);
   border: none;
@@ -693,7 +747,7 @@ form > button:hover {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
@@ -716,6 +770,7 @@ form > button:hover {
   width: 100%;
   height: 30vh;
   border-radius: 12px;
+  margin-top: 20px;
 }
 
 /* FOOTER */
@@ -748,7 +803,7 @@ footer h6 {
 
 #div-leyenda-empresa > p {
   color: var(--blanco);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.3rem;
   font-weight: 300;
 }
@@ -764,10 +819,10 @@ footer h6 {
 .links-footer {
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--blanco);
   margin-bottom: 15px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .links-footer:hover {
@@ -825,10 +880,24 @@ footer h6 {
 }
 
 #div-terminos-y-condiciones p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--blanco);
   font-weight: 200;
-  margin-top: 45px;
+  margin-top: 25px;
+}
+#div-qr-afip {
+  display: flex;
+  justify-content: center;
+}
+#img-afip {display: contents;}
+
+#img-afip img{
+    width: 25%; 
+}
+
+#img-afip img:hover {
+  transform: scale(1.05);
+  transition: all 500ms ease;
 }
 
 #link-whatsapp {
