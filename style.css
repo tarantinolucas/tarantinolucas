@@ -168,6 +168,9 @@ main {
   position: relative;
 }
 
+li::marker {
+  font-size: 2rem;
+}
 /* MEJORA PARA EL DESPLAZAMIENTO CON LINKS */
 section {
   position: relative;
@@ -342,9 +345,14 @@ nav {
 /* SECCION INICIO */
 
 /* TITULO PRINCIPAL */
+#seccion-inicio + .linea-separacion-secciones {
+  margin-top: 0px;
+}
+
 #seccion-inicio {
   padding-top: 88px;
-  min-height: 100%;
+  height: calc(100vh - 88px);
+  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
   background-color: #505454;
@@ -360,7 +368,7 @@ nav {
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   font-weight: 500;
   color: var(--azul);
   margin: 0;
@@ -375,6 +383,7 @@ h1 {
   box-sizing: border-box;
   margin-top: 45px;
   opacity: 0.9;
+  padding: 0px 5px;
 }
 
 #seccion-inicio .boton-contactenos {
@@ -498,6 +507,9 @@ h1 {
 #div-politica-de-calidad li {
   margin-bottom: 15px;
 }
+#div-politica-de-calidad .linea-superior-seccion {
+  top: -95px;
+}
 
 #seccion-quienes-somos .boton-contactenos {
   align-self: flex-start;
@@ -553,7 +565,8 @@ h1 {
 }
 
 #seccion-producto a {
-  font-size: 1.6rem;
+  font-family: "DIN Pro";
+  font-size: 2rem;
   color: var(--azul);
   font-weight: 500;
   margin: 50px 0;
@@ -632,7 +645,7 @@ h1 {
 
 #seccion-contacto-texto > img {
   width: 25%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   max-width: 65px;
 }
 
@@ -879,20 +892,24 @@ footer h6 {
   margin-bottom: 15px;
 }
 
-#div-terminos-y-condiciones p {
+#div-qr-afip + p {
   font-size: 1.3rem;
   color: var(--blanco);
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 25px;
 }
 #div-qr-afip {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-#img-afip {display: contents;}
+#img-afip {
+  display: contents;
+}
 
-#img-afip img{
-    width: 25%; 
+#img-afip img {
+  width: 25%;
+  max-width: 90px;
 }
 
 #img-afip img:hover {
@@ -959,6 +976,18 @@ MOBILE
 
   #contenedor-decorativo {
     margin: 0 35px;
+  }
+  #div-datos-de-contacto iframe {
+    height: 35vh;
+  }
+  #seccion-inicio .boton-contactenos {
+    margin-top: -160px;
+  }
+  #seccion-inicio img {
+    margin: auto;
+  }
+  .div-certificaciones img {
+    margin-right: 25px;
   }
 }
 
