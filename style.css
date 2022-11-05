@@ -80,30 +80,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "DIN Pro";
-  src: url("./assets/DINPro-MediumCondensed.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DIN Pro";
-  src: url("./assets/DINPro-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DIN Pro";
-  src: url("./assets/DINPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* FUENTE INTER */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -441,11 +417,17 @@ h1 {
   max-width: 520px;
 }
 
+/* SECCION CALIDAD */
+#seccion-calidad p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
 .boton-politica-de-calidad {
   font-size: 1.6rem;
   color: var(--azul);
   font-weight: 500;
-  margin: 35px 0;
+  margin: 25px 0;
   display: inline-block;
 }
 
@@ -461,10 +443,9 @@ h1 {
 }
 .div-certificaciones img {
   display: block;
-  width: 15%;
-  height: 15%;
-  margin-right: 10px;
-  max-width: 90px;
+  width: 45%;
+  height: auto;
+  max-width: 200px;
 }
 
 .div-certificaciones ul a {
@@ -479,41 +460,21 @@ h1 {
   transition: all 500ms ease;
   color: var(--naranja);
 }
-.div-caracteristicas-marca {
+.div-logo-certificacion {
   display: flex;
   align-items: center;
-}
-.introduccion-calidad {
-  display: flex;
-  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
 }
 
-#seccion-quienes-somos .div-caracteristicas-marca img {
-  width: 56px;
-  height: 56px;
-  margin-right: 10px;
+.div-logo-certificacion ul {
+  margin: 0px;
 }
 
-#div-calidad {
-  display: flex;
-  flex-direction: column;
-}
-
-#div-politica-de-calidad {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-}
-#div-politica-de-calidad li {
-  margin-bottom: 15px;
-}
-#div-politica-de-calidad .linea-superior-seccion {
-  top: -95px;
-}
-
-#seccion-quienes-somos .boton-contactenos {
-  align-self: flex-start;
-  margin: 25px 0px;
+#seccion-calidad .div-caracteristicas-marca img {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
 }
 
 /* SECCION PRODUCTO */
@@ -535,8 +496,8 @@ h1 {
   margin-bottom: 70px;
 }
 .tarjeta-caracteristica-producto h5 {
-  font-family: "DIN Pro";
-  margin-bottom: 0px;
+  font-family: "Netto Pro";
+  margin-bottom: 5px;
   font-size: 1.7rem;
 }
 
@@ -549,10 +510,10 @@ h1 {
 }
 
 .tarjeta-caracteristica-producto p {
-  font-family: "DIN Pro";
+  font-family: "Netto Pro";
   font-weight: 500;
-  font-size: 1.9rem;
-  line-height: 2.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   margin: 0;
 }
 
@@ -565,8 +526,8 @@ h1 {
 }
 
 #seccion-producto a {
-  font-family: "DIN Pro";
-  font-size: 2rem;
+  font-family: "Netto Pro";
+  font-size: 1.6rem;
   color: var(--azul);
   font-weight: 500;
   margin: 50px 0;
@@ -755,6 +716,23 @@ form > button:hover {
   flex-direction: column;
   width: 100%;
 }
+.div-mail-contacto {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  align-items: center;
+  color: var(--blanco);
+}
+
+.div-mail-contacto p {
+  margin: 0;
+}
+
+.div-mail-contacto p:hover {
+  color: var(--naranja);
+  transition: all 500ms ease;
+}
 
 #div-datos-de-contacto a {
   display: flex;
@@ -776,6 +754,7 @@ form > button:hover {
 
 #div-datos-de-contacto img {
   width: 20px;
+  height: 20px;
   margin-right: 10px;
 }
 #div-datos-de-contacto iframe {
@@ -802,7 +781,9 @@ footer h6 {
   font-weight: 500;
   margin: 15px 0px;
 }
-
+#div-leyenda-empresa {
+  width: 100%;
+}
 #div-leyenda-empresa > a img {
   width: 50%;
   height: auto;
@@ -854,7 +835,7 @@ footer h6 {
 }
 
 #div-redes {
-  margin-bottom: 45px;
+  margin: 30px auto;
   width: 100%;
 }
 
@@ -896,12 +877,13 @@ footer h6 {
   font-size: 1.3rem;
   color: var(--blanco);
   font-weight: 300;
-  margin-top: 25px;
+  margin: 0px;
 }
 #div-qr-afip {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 25px 0px;
 }
 #img-afip {
   display: contents;
@@ -985,9 +967,6 @@ MOBILE
   }
   #seccion-inicio img {
     margin: auto;
-  }
-  .div-certificaciones img {
-    margin-right: 25px;
   }
 }
 
