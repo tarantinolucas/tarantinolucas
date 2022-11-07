@@ -36,7 +36,7 @@
           /></a>
         </div>
         <a href="./index.html" class="bandera-idioma"
-          ><img src="./img/espana.png" alt="bandera de España"
+          ><img src="./img/espana.png" alt="bandera de españa"
         /></a>
         <label for="btn-menu">
           <img id="nav-menu" src="./img/menu.png" />
@@ -45,11 +45,12 @@
       <div id="navbar-desktop">
         <ul>
           <a href="#seccion-inicio"><li>Home</li></a>
-          <a href="#top-seccion-quienes-somos"><li>About us</li></a>
-          <a href="#top-seccion-producto"><li>Product</li></a>
-          <a href="#top-seccion-servicio-tecnico"><li>Technical service</li></a>
+          <a href="#top-seccion-quienes-somos"><li>About Us</li></a>
+          <a href="#top-seccion-producto"><li>Products</li></a>
+          <a href="#top-seccion-calidad"><li>Quality</li></a>
+          <a href="#top-seccion-servicio-tecnico"><li>Technical Service</li></a>
           <a id="link-contacto" href="#top-seccion-contacto"
-            ><li>Contact us</li></a
+            ><li>Contact Us</li></a
           >
         </ul>
       </div>
@@ -58,19 +59,12 @@
     <div id="menu-desplegable">
       <ul>
         <a href="#seccion-inicio"><li>Home</li></a>
-        <a href="#top-seccion-quienes-somos"><li>About us</li></a>
+        <a href="#top-seccion-quienes-somos"><li>About Us</li></a>
         <a href="#top-seccion-producto"><li>Product</li></a>
-          <a href="#top-seccion-servicio-tecnico"><li>Technical service</li></a>
-        <a href="#top-seccion-contacto"><li>Contact us</li></a>
-        <!-- <li id="li-seleccion-idioma">
-          <p>Seleccionar idioma</p>
-          <a href="#"
-            ><img src="./img/argentina.png" alt="bandera de argentina" /></a
-          ><a href="#"
-            ><img src="./img/reino-unido.png" alt="bandera de reino unido"
-          /></a>
-        </li> ATENCION SE SACA MENU DE IDIOMA!!!! -->
-        <label for="btn-menu"><b>X</b> Close menu</label>
+        <a href="#top-seccion-calidad"><li>Quality</li></a>
+        <a href="#top-seccion-servicio-tecnico"><li>Technical Service</li></a>
+        <a href="#top-seccion-contacto"><li>Contact Us</li></a>
+        <label for="btn-menu"><b>X</b> Close Menu</label>
       </ul>
     </div>
 
@@ -79,24 +73,29 @@
       <!-- SECCION INICIO -->
       <section id="seccion-inicio">
         <div id="div-h1">
-          <h1 class="padding-0-20">Defibrillator C-15</h1>
+          <h1 class="padding-0-20">Defibrilator C-15</h1>
           <a
             href="#top-seccion-contacto"
             class="boton-contactenos"
             id="boton-inicio-desktop"
-            >Contact us!</a
+            >Contact Us!</a
           >
         </div>
         <img
-          class="padding-0-20"
+          id="img-inicio-mobile"
           src="./img/producto-portada.png"
+          alt="Imagen del producto principal"
+        />
+        <img
+          id="img-inicio-desktop"
+          src="./img/producto-portada-rev01.png"
           alt="Imagen del producto principal"
         />
         <a
           href="#top-seccion-contacto"
           class="boton-contactenos"
           id="boton-inicio-mobile"
-          >Contact us!</a
+          >Contact Us!</a
         >
       </section>
       <div class="linea-separacion-secciones"></div>
@@ -107,54 +106,23 @@
           id="top-seccion-quienes-somos"
           class="linea-superior-seccion"
         ></div>
-        <h2>About us</h2>
+        <h2>About Us</h2>
+        <img src="./img/imagen-producto.png" alt="Imagen desfibrilador C-15" />
         <p>
-          E&M Electromedicina is an Argentine company that develops,
-          manufactures and sells medical electrical devices. <br />
-          <br />
           Combining cutting-edge technology, design and experience, E&M
-          Electromedicina's products help health professionals in resuscitation
-          and care of patients at the moments they need it most.
+          Electromedicina’s products help health professionals in resuscitation
+          and care of patients at the moments they need it most.<br /><br />
+          E&M Electromedicina is an Argentine company that develops,
+          manufactures and sells medical electrical devices.
+          <br /><br />
+          Our commitment to quality is noticeable in our management system
+          oriented to client’s satisfaction and compliance with international
+          standards that ensure quality and efficiency of the products
+          manufactured. <br /><br />
+          All our products have a two-year warranty and our technical service
+          ensures a quick and efficient answer. We also ensure permanent
+          provision of spare parts and accessories of all our line of products.
         </p>
-        <img
-          src="./img/producto.png"
-          alt="Imagen representativa de la empresa"
-        />
-        <!-- DIV CALIDAD -->
-        <div class="div-caracteristicas-marca" id="div-calidad">
-          <img
-            src="./img/control-de-calidad.png"
-            alt="Imagen de certificacion de calidad"
-          />
-          <div>
-            <h4>Quality</h4>
-            <p>
-              At E&M, we have developed a quality management system with the aim
-              of supplying products of maximum reliability, technological
-              innovation and post-sale assistance, with the permanent
-              sponsorship of our commitment to quality and continuous
-              improvement.
-            </p>
-          </div>
-        </div>
-        <!-- DIV COMPROMISO  -->
-        <div id="div-compromiso" class="div-caracteristicas-marca">
-          <img
-            src="./img/apreton-de-manos.png"
-            alt="Imagen de certificacion de compromiso"
-          />
-          <div>
-            <h4>Commitment</h4>
-            <p>
-              At E&M, we decided to show this commitment through the
-              certification of our system and our products pursuant to the
-              following international standards.
-            </p>
-          </div>
-        </div>
-        <a href="#top-seccion-contacto" class="boton-contactenos"
-          >Contact us!</a
-        >
       </section>
 
       <div class="linea-separacion-secciones"></div>
@@ -163,85 +131,196 @@
       <section id="seccion-producto" class="padding-0-20">
         <div id="top-seccion-producto" class="linea-superior-seccion"></div>
         <h2>Product</h2>
-        <img src="./img/producto.png" alt="Imagen de desfibrilador C-15" />
-        <div class="tarjeta-caracteristica-producto producto-impar">
-          <img src="./img/onda bifasica.png" alt="imagen onda bifasica" />
-          <h5>Bifasico</h5>
-          <p>
-            Onda bifásica adaptativa a la impedancia del paciente Rango de
-            energía desde 1 hasta 360J. Desfibrilación manual, automática y
-            cardioversión sincronizada.
-          </p>
+        <img
+          src="./img/imagen-producto.png"
+          alt="Imagen de desfibrilador C-15"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          repudiandae culpa id vero exercitationem porro ipsa ipsum, iste
+          quibusdam. Voluptatibus magnam impedit minima sapiente iste placeat
+          unde quo eius quis! lorem
+        </p>
+        <div id="contenedor-caracteristicas-producto">
+          <div class="tarjeta-caracteristica-producto producto-impar">
+            <img src="./img/onda bifasica.png" alt="imagen onda bifasica" />
+            <h5>BIPHASIC WAVEFORM</h5>
+            <p>
+              Biphasic truncated exponential waveform with impedance
+              compensation. Defibrillation up to 360 Joules. Manual, Automatic
+              and synchronous cardioversion defibrillation.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-par">
+            <img
+              src="./img/garantia-extendida.png"
+              alt="imagen garantia extendida"
+            />
+            <h5>WARRANTY EXTENDED</h5>
+            <p>
+              3 years of warranty, wiyh a low cost of operative maintenance.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-impar">
+            <img
+              src="./img/liviano.png"
+              alt="imagen persona sosteniendo equipo"
+            />
+            <h5>LIGHTWEIGHT</h5>
+            <p>
+              Weight less than 5 kg (11lb), making it compact and easy to
+              operate during emergencies.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-par">
+            <img
+              src="./img/Detalle DEA.png"
+              alt="imagen desfibrilador automatico"
+            />
+            <h5>AED</h5>
+            <p>
+              In AED mode, the defibrillator automatically analyzes the rhythm
+              and determines whether a shock is advised. Voice and text prompts
+              guide the user through the process. Voice recording is also
+              available.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-impar">
+            <img src="./img/bateria.png" alt="imagen baterias del equipo" />
+            <h5>DUAL BATTERY</h5>
+            <p>
+              Removable and rechargeable batteries keep the unit in constant
+              operation. Each battery supports up to 6 hours operating time or
+              100 full energy shocks.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-par">
+            <img
+              src="./img/Accesorios.png"
+              alt="imagen de los accesorios del equipo"
+            />
+            <h5>ADAPTIVE</h5>
+            <p>
+              A wide range of accessories and optional functions allow the user
+              to set up the equipment in order to fit the needs of a variety of
+              departments.
+            </p>
+          </div>
+          <div class="tarjeta-caracteristica-producto producto-impar">
+            <img
+              src="./img/alta conectividad.png"
+              alt="imagen de conectividad del equipo"
+            />
+            <h5>HIGH CONNECTIVITY</h5>
+            <p>
+              Memory storage trends, waveforms and events of each patient. Easy
+              PC connection to download and edit data.
+            </p>
+          </div>
+          <a href="./assets/Folleto C-15 Digital English.pdf" target="_blank"
+            >See more infomation ➜</a
+          >
         </div>
-        <div class="tarjeta-caracteristica-producto producto-par">
-          <img
-            src="./img/garantia-extendida.png"
-            alt="imagen garantia extendida"
-          />
-          <h5>Garantia extendida</h5>
-          <p>3 años de garantía, con bajo costo de mantenimiento operativo.</p>
-        </div>
-        <div class="tarjeta-caracteristica-producto producto-impar">
-          <img
-            src="./img/liviano.png"
-            alt="imagen persona sosteniendo equipo"
-          />
-          <h5>Liviano</h5>
-          <p>
-            Peso menor a 5 kg. Resistente y fácil de manipular durante las
-            emergencias.
-          </p>
-        </div>
-        <div class="tarjeta-caracteristica-producto producto-par">
-          <img
-            src="./img/Detalle DEA.png"
-            alt="imagen desfibrilador automatico"
-          />
-          <h5>DEA</h5>
-          <p>
-            Desfibrilación automática con asistencia al operador por voz.
-            Grabación de audio y eventos en el escenario de operaciones de
-            reanimación.
-          </p>
-        </div>
-        <div class="tarjeta-caracteristica-producto producto-impar">
-          <img src="./img/bateria.png" alt="imagen baterias del equipo" />
-          <h5>Doble alimentacion</h5>
-          <p>
-            Sus 2 baterías desmontables y recargables mantienen la unidad
-            siempre operativa y brindan 6 horas de monitorización o 100
-            descargas de energía.
-          </p>
-        </div>
-        <div class="tarjeta-caracteristica-producto producto-par">
-          <img
-            src="./img/Accesorios.png"
-            alt="imagen de los accesorios del equipo"
-          />
-          <h5>Versatil</h5>
-          <p>
-            Una amplia gama de accesorios y funciones opcionales permiten
-            configurar el equipo a las múltiples necesidades de cada ámbito de
-            aplicación.
-          </p>
-        </div>
-        <div class="tarjeta-caracteristica-producto producto-impar">
-          <img
-            src="./img/alta conectividad.png"
-            alt="imagen de conectividad del equipo"
-          />
-          <h5>Alta conectividad</h5>
-          <p>
-            Almacenamiento en memoria de ondas, eventos y tendencias de cada
-            paciente. Conexión y descarga de información a PC.
-          </p>
-        </div>
-        <a href="./img/Folleto-digital-20-8-21.pdf" target="_blank"
-          >See more information ➜</a
-        >
       </section>
 
-      <div class="linea-separacion-secciones"></div>      
+      <div class="linea-separacion-secciones"></div>
+
+      <!-- SECCION CALIDAD -->
+
+      <section id="seccion-calidad" class="padding-0-20">
+        <div id="top-seccion-calidad" class="linea-superior-seccion"></div>
+        <h2>Quality</h2>
+        <div class="div-caracteristicas-marca" id="div-calidad">
+          <img
+            src="./img/control-de-calidad.png"
+            alt="Imagen de certificacion de calidad"
+          />
+          <div>
+            <p>
+              At E&M, we have developed a quality management system with the aim
+              of supplying products of maximum reliability, technological
+              innovation and post-sale assistance, with the permanent
+              sponsorship of our commitment to quality and continuous
+              improvement.
+            </p>
+          </div>
+          <a
+            href="./assets/Quality policy Rev.04.pdf"
+            target="_blank"
+            class="boton-politica-de-calidad"
+            >See quality policy ➜</a
+          >
+        </div>
+        <div id="div-certificaciones-desktop">
+          <h4 id="titulo-certificaciones">Certifications</h4>
+          <p>
+            Our traceability record system identifies each product individually,
+            as well as its critical and accessory components. This allows us to
+            trace them in the event of a potential failure and helps us to
+            prevent their occurrence by immediately informing the client.
+            <br /><br />
+            Our processes have been designed to manufacture reliable products,
+            satisfy our clients’ needs, and meet the compliance requirement both
+            at the local level and at the destination countries. For those
+            reasons, we decided to show this commitment through the
+            certification of our system and our products pursuant to the
+            following international standards: <br /><br />
+          </p>
+          <div class="div-certificaciones" id="div-anmat">
+            <div>
+              <h4>
+                National Administration of Drugs, Food and Medical Technology
+                (ANMAT)
+              </h4>
+              <p>
+                The National Administration of Drugs, Food and Medical
+                Technology is the agency that controls medical products in
+                Argentina. It keeps a record of products and companies and
+                issues the certificates that authorize local manufacture and
+                sale and exportation.
+              </p>
+              <div class="div-logo-certificacion">
+                <img src="./img/logo-anmat.png" alt="Certificado ANMAT" />
+                <ul>
+                  <a href="./assets/Habilitacion-E&M.pdf" target="_blank">
+                    <li>Authorization ANMAT</li>
+                  </a>
+                  <a href="./assets/Certificado-BPF.pdf" target="_blank">
+                    <li>GMP Certificate</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="div-certificaciones" id="div-iso">
+            <div>
+              <h4>ISO 13485</h4>
+              <p>
+                As a manufacturer of medical products, our company is audited
+                annually by renowned certification entities that evaluate our
+                capacity to supply medical devices to satisfy our clients’
+                requirements and the applicable compliance standards.
+              </p>
+              <div class="div-logo-certificacion">
+                <img
+                  src="./img/IRAM-ISO-13485-2019.png"
+                  alt="Certificado Logo-ISO-13485"
+                />
+                <ul>
+                  <a
+                    href="./assets/Certificado ISO13485 English.pdf"
+                    target="_blank"
+                  >
+                    <li>Certificado ISO 13485</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="linea-separacion-secciones"></div>
 
       <!-- SECCION SERVICIO TECNICO -->
       <section id="seccion-servicio-tecnico" class="padding-0-20">
@@ -251,12 +330,12 @@
         ></div>
         <div id="contenedor-imagen">
           <img
-            src="./img/chica-servicio-tecnico.png"
+            src="./img/img-servicio-tecnico.jpg"
             alt="imagen-servicio-tecnico"
           />
         </div>
         <div id="seccion-servicio-tecnico-texto">
-          <h2>Technical service</h2>
+          <h2>Technical Service</h2>
           <img src="./img/servicio-tecnico.png" alt="icono-servicio-tecnico" />
           <p>
             Our company offers a technical service of excellent quality to
@@ -268,7 +347,40 @@
             technical department has cutting-edge equipment, highly trained
             staff and permanent availability of spare parts and accessories.
           </p>
-          <a href="#top-seccion-contacto">Contact us ➜</a>
+        </div>
+        <div class="div-servicios-empresa">
+          <h4>Our company offers:</h4>
+          <ul>
+            <li>Extended warranty, 24 months with wide coverage</li>
+            <li>
+              Preventive maintenance service with functional controls in field
+            </li>
+            <li>User training</li>
+            <li>Online support and advice in the repair of devices</li>
+            <li>Permanent provision of spare parts for 5 years</li>
+            <li>Traceable records of spare parts and technical tasks</li>
+          </ul>
+        </div>
+        <div id="div-datos-de-contacto">          
+          <h5>Contact Us</h5>
+          <a
+            href="https://api.whatsapp.com/send?phone=5491157325112&text="
+            target="_blank"
+            ><img
+              src="./img/whatsapp-color-primario.png"
+              alt="imagen-celular"
+            />+54 9 (11) 5732-5112 (Technical Service)</a
+          >
+          <a href="tel:+541146352977" target="_blank"
+            ><img src="./img/telefono.png" alt="imagen-celular" />+54 (11)
+            4635-2977 (int.25)</a
+          >
+          <a href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6" target="_blank"
+            ><img
+              src="./img/ubicacion-color-primario.png"
+              alt="imagen-ubicacion"
+            />Fonrouge 1861, Autonomous City of Buenos Aires</a
+          >
         </div>
       </section>
 
@@ -278,9 +390,9 @@
         <div id="top-seccion-contacto" class="linea-superior-seccion"></div>
         <div id="contenedor-decorativo">
           <div id="seccion-contacto-texto">
-            <h2>Contact us</h2>
-            <img src="./img/email.png" alt="imagen-decorativa-contacto" />
-            <form action="forms/wcaFm.php" method="POST">
+            <h2>Contact Us</h2>
+            <img src="./img/email2.png" alt="imagen-decorativa-contacto" />
+            <form id="form" action="forms/wcaFm.php" method="POST">
               <input type="hidden" name="recipient" value="info@eym.com.ar" />
               <input
                 type="hidden"
@@ -289,74 +401,46 @@
               />
               <input
                 type="text"
-                placeholder="Name and lastname or business name"
+                placeholder="Name and surname or business name"
                 required
                 name="name"
               />
-              <input type="tel" placeholder="Telephone" required name="phone" />
               <input
-                type="email"
-                placeholder="Email address"
+                type="tel"
+                placeholder="Phone number"
                 required
-                name="email"
+                name="phone"
               />
+              <input type="email" placeholder="E-MAIL" required name="email" />
               <textarea
                 name="message"
                 id=""
                 cols="30"
                 rows="5"
-                placeholder="Leave us your comment..."
+                placeholder="Comments..."
                 required
               ></textarea>
-              <div id="div-botones-radio">
-                <label for="radio-cotizacion">
-                  <input
-                    type="radio"
-                    id="radio-cotizacion"
-                    name="tipo-de-contacto"
-                  />
-                  Get quote</label
-                >
-                <label for="radio-servicio-tecnico">
-                  <input
-                    type="radio"
-                    id="radio-servicio-tecnico"
-                    name="tipo-de-contacto"
-                  />
-                  Technical service</label
-                >
-                <label for="radio-otras-consultas">
-                  <input
-                    type="radio"
-                    id="radio-otras-consultas"
-                    name="tipo-de-contacto"
-                    checked
-                  />
-                  Other queries</label
-                >
-              </div>
-              <button type="submit">Send</button>
+              <button id="submit" type="submit">Send</button>
             </form>
           </div>
           <div id="div-datos-de-contacto">
-            <img src="./img/email.png" alt="imagen-decorativa-contacto" />
-            <h5>Contact us</h5>
-            <a
-              href="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
-              ><img
-                src="./img/email2.png"
-                alt="imagen-sobre"
-              />info@eym.com.ar</a
-            >
-            <a
-              href="https://api.whatsapp.com/send?phone=5491137623761&text="
-              target="_blank"
-              ><img src="./img/telefono-movil.png" alt="imagen-celular" />+54 9
-              (11) 3762-3761</a
+            <img
+              id="img-sobre-desktop"
+              src="./img/email2.png"
+              alt="imagen-decorativa-contacto"
+            />
+            <h5>Contact Us</h5>
+            <div class="div-mail-contacto">
+              <img src="./img/email2.png" alt="imagen-sobre" />
+              <p>info@eym.com.ar</p>
+            </div>
+            <a href="tel:+541146352977" target="_blank"
+              ><img src="./img/telefono-blanco.png" alt="imagen-telefono" />+54
+              (11) 4635-2977 / 4635-6873</a
             >
             <a href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6" target="_blank"
               ><img src="./img/ubicacion.png" alt="imagen-ubicacion" />Fonrouge
-              1861, Autonomous city of Buenos Aires</a
+              1861, Autonomous City of Buenos Aires</a
             >
           </div>
         </div>
@@ -368,11 +452,6 @@
         <a href="#">
           <img src="./img/logo-blanco.png" alt="logo-empresa" />
         </a>
-        <p>
-          E&M electromedicina, a company with <b>30 years</b> of experience in
-          the development and production of medical equipment for care national
-          industry critics.
-        </p>
         <div id="div-redes">
           <a href="https://twitter.com/EyM_electromedi" target="_blank"
             ><img src="./img/twitter.png" alt="logo-twitter"
@@ -392,65 +471,66 @@
       <div id="div-idioma" class="width-1-de-3">
         <h6>Select language</h6>
         <a class="links-footer" href="./index.html"
-          >Spanish<img src="./img/espana.png" alt="bandera de españa"
+          >Spanish<img src="./img/espana.png" alt="Spanish Flag"
         /></a>
         <a class="links-footer" href="./index-EN.html"
-          >English<img src="./img/reino-unido.png" alt="bandera de Reino unido"
+          >English<img
+            src="./img/reino-unido.png"
+            alt="Flag of the United Kingdom"
         /></a>
       </div>
       <div id="div-accesos-rapidos" class="width-1-de-3">
         <h6>Quick access</h6>
         <a class="links-footer" href="#seccion-inicio">Home</a>
-        <a class="links-footer" href="#top-seccion-quienes-somos">About us</a>
+        <a class="links-footer" href="#top-seccion-quienes-somos">About Us</a>
         <a class="links-footer" href="#top-seccion-producto">Product</a>
+        <a class="links-footer" href="#top-seccion-calidad">Quality</a>
         <a class="links-footer" href="#top-seccion-servicio-tecnico"
-          >Technical service</a
+          >Technical Service</a
         >
       </div>
       <div id="div-datos-de-contacto" class="width-1-de-3">
-        <h6>Contact us</h6>
-        <a
-          class="links-footer"
-          href="mailto: info@eym.com.ar?Subject=Indique el asunto por el que se contacta con nosotros"
-          ><img src="./img/email2.png" alt="imagen-sobre" />info@eym.com.ar</a
-        >
-        <a
-          class="links-footer"
-          href="https://api.whatsapp.com/send?phone=5491137623761&text="
-          target="_blank"
-          ><img src="./img/telefono-movil.png" alt="imagen-celular" /> +54 9
-          (11) 3762-3761</a
+        <h6>Contact Us</h6>
+        <div class="div-mail-contacto">
+          <img
+            src="./img/email2.png"
+            alt="
+          Image of an envelope"
+          />
+          <p>info@eym.com.ar</p>
+        </div>
+        <a class="links-footer" href="tel:+541146352977" target="_blank"
+          ><img src="./img/telefono-blanco.png" alt="imagen-telefono" />+54 (11)
+          4635-2977 / 4635-6873</a
         >
         <a
           class="links-footer"
           href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6"
           target="_blank"
           ><img src="./img/ubicacion.png" alt="imagen-ubicacion" />Fonrouge
-          1861, Autonomous city of Buenos Aires</a
+          1861, Autonomous City of Buenos Aires</a
         >
       </div>
-      <div id="div-terminos-y-condiciones">
-        <ul>
-          <li>
-            <a class="links-footer" href="#">Terms & Conditions</a>
-          </li>
-          <span>|</span>
-          <li>
-            <a class="links-footer" href="#">Quality politics</a>
-          </li>
-          <span>|</span>
-          <li>
-            <a class="links-footer" href="#">Activate the warranty</a>
-          </li>
-          <span>|</span>
-          <li>
-            <a class="links-footer" href="#top-seccion-contacto">Contact us</a>
-          </li>
-        </ul>
-        <p>
-          © 2022 Soluciones tecnologicas para la salud S.A. All rights reserved.
-        </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26258.479420535317!2d-58.50052931617736!3d-34.646875066299614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90f333bb825%3A0x5899ce4f9f0639a6!2sE%26M%20Electromedicina!5e0!3m2!1ses-419!2sar!4v1667553812222!5m2!1ses-419!2sar"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div id="div-qr-afip">
+        <a
+          target="_blank"
+          id="img-afip"
+          href="http://qr.afip.gob.ar/?qr=jHUqb-1hDDK6i87xYR3PsA,,"
+          ><img src="./img/DATAWEB.jpg" alt="Data Fiscal"
+        /></a>
       </div>
+      <p>
+        © 2022 Soluciones tecnologicas para la salud S.A. All rights reserved.
+      </p>
       <a
         id="link-whatsapp"
         target="_blank"
@@ -458,6 +538,7 @@
         ><img src="./img/whatsapp.png" alt="logo-whatsapp"
       /></a>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
 

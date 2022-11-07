@@ -1,21 +1,21 @@
-Politica de calidad ---- link aparte
-Pedirle a ines certificado BPF y habilitacion de empresa
-En contacto cambiar whatsapp por telefono de linea
-Eliminar boton de contactenos de la seccion calidad.
-cambiar logo anmat ---- https://cms.asofar.com.ar/uploads/_/originals/anmat-3.png
-Pedirle a ines el manual de marca de iram (iso 13485)
-logo anmay e iso al lado de certificacion
+■	Politica de calidad ---- link aparte 
+!!!	Pedirle a ines certificado BPF y habilitacion de empresa
+■	En contacto cambiar whatsapp por telefono de linea
+■ 	Eliminar boton de contactenos de la seccion calidad.
+■	cambiar logo anmat ---- https://cms.asofar.com.ar/uploads/_/originals/anmat-3.png
+!!!	Pedirle a ines el manual de marca de iram (iso 13485)
+■	logo anmat e iso al lado de certificacion
 
-lista desplegable
-incio
-quienes somos 
-producto
-calidad (agregar item calidad)
-servicio tecnico
-contacto
+■	Agregar al menu el item CALIDAD
+	[incio
+	quienes somos 
+	producto
+	calidad (agregar item calidad)
+	servicio tecnico
+	contacto]
 
-en producto cambiar letra din pro por netto pro
+■	en producto cambiar letra din pro por netto pro
 
-sacar leyenda de footer
+■ 	sacar leyenda de footer
 
-sacar links de footer
+■ 	sacar links de footer
