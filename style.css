@@ -88,6 +88,8 @@
 
 /* ESTANDARIZACION DEL CSS */
 :root {
+  text-align: justify;
+  scroll-behavior: smooth;
   font-size: 62.5%;
   /* Colocar la fuente exportada */
   font-family: "Netto Pro", "Inter", sans-serif;
@@ -95,7 +97,6 @@
   --gris: #e1e1e1;
   --naranja: #ff9900;
   --blanco: #ffffff;
-  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
@@ -169,7 +170,7 @@ header {
 }
 
 nav {
-  padding: 20px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,12 +185,37 @@ nav {
 
 #nav-logo {
   width: auto;
-  height: 45px;
+  height: 50px;
+}
+.div-hamburguesa-idioma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bandera-idioma img {
-  width: 30px;
+.div-hamburguesa-idioma a {
+  color: var(--azul);
+  font-size: 1.3rem;
+  padding: 5px;
+  border: 1px solid var(--azul);
+  border-radius: 3px;
+  margin-bottom: 7px;
+  font-weight: 500;
 }
+
+.div-hamburguesa-idioma a:hover {
+  transform: scale(1.1);
+  color: var(--naranja);
+  transition: all 500ms ease;
+  border-color: var(--naranja);
+}
+
+/* .bandera-idioma img {
+  width: 20px;
+  position: fixed;
+  top: 10px;
+  right: 5px;
+} */
 
 .bandera-idioma img:hover {
   transform: scale(1.2);
@@ -229,7 +255,7 @@ nav {
   transform: translateX(20vw);
 }
 
-#menu-desplegable label {
+/* #menu-desplegable label {
   position: absolute;
   left: 0;
   width: 80vw;
@@ -252,6 +278,27 @@ nav {
   border-bottom: 1px solid var(--naranja);
   transition: all 500ms ease-in;
   transform: scale(1.05);
+} */
+#menu-desplegable p {
+  padding: 12px;
+  border-bottom: 1px solid var(--gris);
+  border-left: 2px solid var(--azul);
+  margin: 0 0 3px 0;
+  background-color: var(--blanco);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#menu-desplegable p:hover {
+  color: var(--naranja);
+  border-left: 3px solid var(--naranja);
+  border-bottom: 1px solid var(--naranja);
+  transition: all 500ms ease-in;
+  transform: scale(1.05);
+}
+
+#menu-desplegable b {
+  margin-left: 25px;
 }
 
 #btn-menu {
@@ -277,6 +324,9 @@ nav {
   border-bottom: 1px solid var(--naranja);
   transition: all 500ms ease-in;
   transform: scale(1.05);
+}
+#menu-desplegable .btn-contacto-menu-desplegable {
+  margin-bottom: 0;
 }
 
 #li-seleccion-idioma {
@@ -315,10 +365,6 @@ nav {
   transition: all 500ms ease;
 }
 
-#menu-desplegable p {
-  margin: 0;
-}
-
 /* MAIN */
 
 /* SECCION INICIO */
@@ -330,21 +376,19 @@ nav {
 }
 
 #seccion-inicio {
-  padding-top: 88px;
-  height: calc(100vh - 88px);
-  justify-content: space-evenly;
-  display: flex;
-  flex-direction: column;
+  scroll-behavior: smooth;
   background-color: #505454;
-  background-image: linear-gradient(270deg, #ffffff45 0%, #e0e0ff4a 100%),
-    url(./img/bg-portada.jpg);
+  background-image: url(./img/bg-portada.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
-
-#div-h1 {
-  padding-top: 25px;
+.contenedor-principal {
+  height: calc(100vh - 88px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 88px;
 }
 
 h1 {
@@ -358,12 +402,10 @@ h1 {
 
 #seccion-inicio img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   max-width: 700px;
   box-sizing: border-box;
-  margin-top: 45px;
-  opacity: 0.9;
-  padding: 0px 5px;
 }
 #seccion-inicio #img-inicio-desktop {
   display: none;
@@ -371,8 +413,8 @@ h1 {
 
 #seccion-inicio .boton-contactenos {
   order: 3;
-  margin: -60px auto 30px 20px;
   z-index: 10;
+  margin-left: 20px;
 }
 
 /* BOTON DE CONTACTENOS */
@@ -410,6 +452,9 @@ h1 {
 }
 
 /* SECCION QUIENES SOMOS */
+#seccion-quienes-somos {
+  scroll-behavior: smooth;
+}
 
 #seccion-quienes-somos p {
   font-size: 1.6rem;
@@ -425,10 +470,14 @@ h1 {
 }
 
 /* SECCION CALIDAD */
+#seccion-calidad {
+  scroll-behavior: smooth;
+}
 #seccion-calidad p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .boton-politica-de-calidad {
   font-size: 1.6rem;
@@ -488,6 +537,9 @@ h1 {
 }
 
 /* SECCION PRODUCTO */
+#seccion-producto {
+  scroll-behavior: smooth;
+}
 
 #seccion-producto > img {
   display: block;
@@ -500,6 +552,14 @@ h1 {
   line-height: 2.4rem;
   font-weight: 400;
   margin: 0px auto 50px auto;
+}
+#seccion-producto ul {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+#seccion-producto li {
+  margin-bottom: 7px;
 }
 
 .tarjeta-caracteristica-producto {
@@ -552,7 +612,9 @@ h1 {
 }
 
 /* SECCION SERVICIO TECNICO */
-
+#seccion-servicio-tecnico {
+  scroll-behavior: smooth;
+}
 #seccion-servicio-tecnico #contenedor-imagen {
   display: none;
 }
@@ -595,7 +657,9 @@ h1 {
   box-sizing: border-box;
   border-radius: 10px;
 }
-
+#seccion-contacto {
+  scroll-behavior: smooth;
+}
 #seccion-contacto h2 {
   color: var(--blanco);
   margin-bottom: 35px;
@@ -649,7 +713,6 @@ textarea:focus {
   transform: scale(1.05);
   transition: all 500ms ease;
 }
-
 #seccion-contacto h5 {
   color: var(--blanco);
   text-transform: capitalize;
@@ -897,12 +960,12 @@ iframe {
 
 #link-whatsapp {
   position: fixed;
-  bottom: 25px;
+  bottom: 10px;
   right: 20px;
 }
 
 #link-whatsapp img {
-  width: 50px;
+  width: 40px;
   z-index: 100;
 }
 
@@ -927,7 +990,9 @@ MOBILE
 
 @media (min-width: 425px) {
   /* ESTANDARIZACIONES GENERALES */
-
+  #link-whatsapp {
+    right: 35px;
+  }
   .padding-0-20 {
     padding: 0 35px;
   }
@@ -941,7 +1006,7 @@ MOBILE
   }
 
   nav {
-    padding: 20px 35px;
+    padding: 11px 35px;
   }
 
   footer {
@@ -957,20 +1022,15 @@ MOBILE
     margin: 0 35px;
   }
 
-  #seccion-inicio .boton-contactenos {
-    margin-top: -160px;
-  }
-  #seccion-inicio img {
-    margin: auto;
-  }
   #seccion-inicio #img-inicio-mobile {
     max-width: 550px;
   }
   .div-logo-certificacion {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .div-logo-certificacion img {
-    margin-right: 25px;
+    margin-right: 40px;
+    max-height: 80px;
   }
   .width-1-de-3 {
     width: 33%;
@@ -1005,14 +1065,12 @@ MOBILE
     display: block;
   }
 
-  section {
-    max-width: 1024px;
-    margin: auto;
-  }
-
   #div-h1 h1 {
     padding-top: 0;
     padding-right: 5px;
+  }
+  section {
+    margin: auto;
   }
 
   /* HEADER */
@@ -1023,15 +1081,14 @@ MOBILE
     padding: 0;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--blanco);
     width: 100%;
   }
 
   #navbar-desktop a {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     background-color: var(--azul);
     color: var(--blanco);
     justify-content: center;
@@ -1058,19 +1115,24 @@ MOBILE
   #seccion-inicio #img-inicio-desktop {
     display: block;
     padding: 0;
-    max-width: 1024px;
-    border-radius: 80%;
+    max-width: 700px;
+    margin: 0;
   }
   #seccion-inicio #img-inicio-mobile {
     display: none;
   }
 
   #seccion-inicio {
+    background-image: url(./img/bg-portada-prueba.jpg);
+  }
+  .contenedor-principal {
+    padding: 138px 0 0 0;
     align-items: center;
     flex-direction: row;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 137px);
     justify-content: center;
-    padding: 130px 0 0 0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   #container-decorativo-producto-inicio {
@@ -1089,7 +1151,7 @@ MOBILE
     display: none;
   }
   #seccion-inicio img {
-    width: 65%;
+    width: 55%;
   }
 
   /* SECCION QUIENES SOMOS */
@@ -1183,6 +1245,7 @@ MOBILE
   }
   #seccion-calidad .div-caracteristicas-marca img {
     margin: 0 10px 0 0;
+    display: none;
   }
 
   /* SECCION SERVICIO TECNICO */
@@ -1308,15 +1371,14 @@ MOBILE
   }
 
   /* SECCION INICIO */
-  #circulo-decorativo-grande {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
+
+  section {
+    max-width: 1024px;
   }
 
   #seccion-inicio {
     min-height: 550px;
-    max-width: 1440px;
+    min-width: 100%;
   }
 
   h1 {
@@ -1333,17 +1395,16 @@ MOBILE
     margin: 65px auto;
   }
 
-  /* SECCION NUESTROS CLIENTES */
-  #seccion-nuestros-clientes {
-    padding: 0 50px;
-  }
+  /* SECCION CALIDAD */
 
-  #div-texto-seccion-nuestros-clientes .padding-0-20 {
-    padding: 0 15px 0 0;
+  #div-certificaciones-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-
-  #seccion-nuestros-clientes #boton-ver-todos-desktop {
-    margin-left: 0px;
+  .div-certificaciones {
+    width: 47%;
+    align-self: self-start;
   }
 
   /* FOOTER */
@@ -1397,6 +1458,5 @@ MOBILE
     order: 7;
   }
 }
-
 
 /* Created by tarantinolucas®. */

@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<title>{titulo}</title>
+
+<style>
+
+.bodytext {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        line-height: 12px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #666666;
+}
+.inp    {
+        BORDER: 1px solid; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px; TEXT-DECORATIO
+N: none }
+.blanco {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        line-height: 12px;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        color: #FFFFFF;
+}
+.bolds {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: bold;
+        color: #6699CC;
+        text-decoration: none;
+}
+
+.btxt {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+}
+
+BODY { margin: 0; SCROLLBAR-FACE-COLOR: #999999; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #666666; SCROLLBA
+R-3DLIGHT-COLOR: #CCCCCC; SCROLLBAR-ARROW-COLOR:  #FFFFFF; SCROLLBAR-TRACK-COLOR: #FFFFFF; SCROLLBAR-DARKSHADOW-COLOR: #666666
+; }
+
+a:link, a:active, a:visited {  color: #6699CC; text-decoration: underline;}
+
+
+</style>
+</head>
+
+<body>
+<br><br>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="500" id="AutoNumber1">
+    <tr>
+      <td width="100%" bgcolor="#999999" height="25">
+      <font color="#000000" face="Verdana" size="2"><b>{titulo}</b></font></td>
+      <td width
+    </tr>
+    <tr>
+      <td width="100%" bgcolor="#EFEFEF">
+      <div align="center">
+        <center>
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber2">
+          <tr>
+	    <td width="5%">&nbsp;</td>
+	    <td width="70%" class="bodytext" colspan="2"><br><b>&nbsp;Enviado el dia {fecha} a las {hora} horas.</b><br><br></td>
+	    <td width="5%">&nbsp;</td>
+	  </tr>
+	    <tmpl:row>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="20%" class="btxt">&nbsp;&nbsp;{campo}</td>
+            <td width="70%" class="bodytext"><div align="left"> {valor} </div></td>
+            <td width="5%">&nbsp;</td>
+          </tr>
+	    </tmpl:row>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="40%">&nbsp;</td>
+            <td width="50%">&nbsp;</td>
+            <td width="5%">&nbsp;</td>
+          </tr>
+        </table>
+        </center>
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" bgcolor="#666666">
+      <p align="center"><img src="http://www.com.ar/im/copyright.gif" width="155" height="17"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<br><br>
+</body>
+
+</html>
+

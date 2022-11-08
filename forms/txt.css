@@ -1,0 +1,43 @@
+.bodytext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 12px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #666666;
+}
+.inp    {  
+        BORDER: 1px solid; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px; TEXT-DECORATION: none }
+.blanco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 12px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+}
+.bolds {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #6699CC;
+	text-decoration: none;
+}
+
+.btxt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+BODY { margin: 0; SCROLLBAR-FACE-COLOR: #999999; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #666666; SCROLLBAR-3DLIGHT-COLOR: #CCCCCC; SCROLLBAR-ARROW-COLOR:  #FFFFFF; SCROLLBAR-TRACK-COLOR: #FFFFFF; SCROLLBAR-DARKSHADOW-COLOR: #666666; }
+
+a:link, a:active, a:visited {  color: #6699CC; text-decoration: underline;}

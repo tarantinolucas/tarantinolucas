@@ -35,18 +35,18 @@
               alt="logo-E&M Electromedicina"
           /></a>
         </div>
-        <a href="./index.html" class="bandera-idioma"
-          ><img src="./img/espana.png" alt="bandera de españa"
-        /></a>
-        <label for="btn-menu">
-          <img id="nav-menu" src="./img/menu.png" />
-        </label>
+        <div class="div-hamburguesa-idioma">
+          <a href="./index.html" class="bandera-idioma">ESP</a>
+          <label for="btn-menu">
+            <img id="nav-menu" src="./img/hamburger.png" />
+          </label>
+        </div>
       </nav>
       <div id="navbar-desktop">
         <ul>
           <a href="#seccion-inicio"><li>Home</li></a>
           <a href="#top-seccion-quienes-somos"><li>About Us</li></a>
-          <a href="#top-seccion-producto"><li>Products</li></a>
+          <a href="#top-seccion-producto"><li>Product</li></a>
           <a href="#top-seccion-calidad"><li>Quality</li></a>
           <a href="#top-seccion-servicio-tecnico"><li>Technical Service</li></a>
           <a id="link-contacto" href="#top-seccion-contacto"
@@ -58,13 +58,17 @@
     <input type="checkbox" id="btn-menu" />
     <div id="menu-desplegable">
       <ul>
+        <label for="btn-menu"
+          ><p>Close Menu<b>X</b></p></label
+        >
         <a href="#seccion-inicio"><li>Home</li></a>
         <a href="#top-seccion-quienes-somos"><li>About Us</li></a>
         <a href="#top-seccion-producto"><li>Product</li></a>
         <a href="#top-seccion-calidad"><li>Quality</li></a>
         <a href="#top-seccion-servicio-tecnico"><li>Technical Service</li></a>
-        <a href="#top-seccion-contacto"><li>Contact Us</li></a>
-        <label for="btn-menu"><b>X</b> Close Menu</label>
+        <a class="btn-contacto-menu-desplegable" href="#top-seccion-contacto"
+          ><li>Contact Us</li></a
+        >
       </ul>
     </div>
 
@@ -72,31 +76,35 @@
     <main>
       <!-- SECCION INICIO -->
       <section id="seccion-inicio">
-        <div id="div-h1">
-          <h1 class="padding-0-20">Defibrilator C-15</h1>
+        <div class="contenedor-principal">
+          <div id="div-h1">
+            <h1 class="padding-0-20">C-15 Defibrilator</h1>
+            <!-- <a
+              href="#top-seccion-contacto"
+              class="boton-contactenos"
+              id="boton-inicio-desktop"
+              >Contact Us!</a
+            > -->
+          </div>
+          <img
+            loading="lazy"
+            id="img-inicio-mobile"
+            src="./img/Producto-portada-ENG.png"
+            alt="Imagen del producto principal"
+          />
+          <img
+            loading="lazy"
+            id="img-inicio-desktop"
+            src="./img/Producto-portada-ENG.png"
+            alt="Imagen del producto principal"
+          />
           <a
             href="#top-seccion-contacto"
             class="boton-contactenos"
-            id="boton-inicio-desktop"
+            id="boton-inicio-mobile"
             >Contact Us!</a
           >
         </div>
-        <img
-          id="img-inicio-mobile"
-          src="./img/producto-portada.png"
-          alt="Imagen del producto principal"
-        />
-        <img
-          id="img-inicio-desktop"
-          src="./img/producto-portada-rev01.png"
-          alt="Imagen del producto principal"
-        />
-        <a
-          href="#top-seccion-contacto"
-          class="boton-contactenos"
-          id="boton-inicio-mobile"
-          >Contact Us!</a
-        >
       </section>
       <div class="linea-separacion-secciones"></div>
 
@@ -107,7 +115,11 @@
           class="linea-superior-seccion"
         ></div>
         <h2>About Us</h2>
-        <img src="./img/imagen-producto.png" alt="Imagen desfibrilador C-15" />
+        <img
+          loading="lazy"
+          src="./img/imagen-producto.png"
+          alt="Imagen desfibrilador C-15"
+        />
         <p>
           Combining cutting-edge technology, design and experience, E&M
           Electromedicina’s products help health professionals in resuscitation
@@ -132,15 +144,39 @@
         <div id="top-seccion-producto" class="linea-superior-seccion"></div>
         <h2>Product</h2>
         <img
+          loading="lazy"
           src="./img/imagen-producto.png"
           alt="Imagen de desfibrilador C-15"
         />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-          repudiandae culpa id vero exercitationem porro ipsa ipsum, iste
-          quibusdam. Voluptatibus magnam impedit minima sapiente iste placeat
-          unde quo eius quis! lorem
-        </p>
+        <h4>The C-15 defibrillator provides the following features:</h4>
+        <ul>
+          <li>
+            Manual and automatic defibrillation and cardioversion
+            synchronized with biphasic wave adaptable to the impedance of the
+            patient
+          </li>
+          <li>Transthoracic pacemaker in fixed mode or on demand.</li>
+          <li>
+            Up to 7-lead ECG monitoring and SpO2 display
+            and plethysmographic curve.
+          </li>
+          <li>
+            Compact, lightweight, with a user-friendly interface for
+            principal functions.
+          </li>
+          <li>
+            Autonomy of use of up to 60 discharges at maximum energy with two
+            detachable batteries.
+          </li>
+          <li>
+            Graphic recording and data storage for later analysis and
+            transmission to data networks.
+          </li>
+          <li>
+            Wide range of accessories for multiple applications in the
+            different work environment.
+          </li>
+        </ul>
         <div id="contenedor-caracteristicas-producto">
           <div class="tarjeta-caracteristica-producto producto-impar">
             <img src="./img/onda bifasica.png" alt="imagen onda bifasica" />
@@ -303,7 +339,7 @@
               </p>
               <div class="div-logo-certificacion">
                 <img
-                  src="./img/IRAM-ISO-13485-2019.png"
+                  src="./img/logo-iram.png"
                   alt="Certificado Logo-ISO-13485"
                 />
                 <ul>
@@ -361,7 +397,7 @@
             <li>Traceable records of spare parts and technical tasks</li>
           </ul>
         </div>
-        <div id="div-datos-de-contacto">          
+        <div id="div-datos-de-contacto">
           <h5>Contact Us</h5>
           <a
             href="https://api.whatsapp.com/send?phone=5491157325112&text="
@@ -392,13 +428,19 @@
           <div id="seccion-contacto-texto">
             <h2>Contact Us</h2>
             <img src="./img/email2.png" alt="imagen-decorativa-contacto" />
-            <form id="form" action="forms/wcaFm.php" method="POST">
-              <input type="hidden" name="recipient" value="info@eym.com.ar" />
+            <form
+              id="form"
+              action="forms/wcaFm.php"
+              method="POST"
+              class="formulario1"
+            >
+              <input type="hidden" name="recipient" value="lucast@eym.com.ar" />
               <input
                 type="hidden"
                 name="redirect"
-                value="http://127.0.0.1:5500/index.html"
+                value="http://www.eym.com.ar/gracias.html"
               />
+              <input type="hidden" name="subject" value="Formulario C-15" />
               <input
                 type="text"
                 placeholder="Name and surname or business name"
