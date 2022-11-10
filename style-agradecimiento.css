@@ -1,0 +1,154 @@
+/* FUENTES */
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Netto Pro";
+  src: url("./assets/NettoPro-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* FUENTE INTER */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ESTANDARIZACION DEL CSS */
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* Colocar la fuente exportada */
+  font-family: "Netto Pro", "Inter", sans-serif;
+  --azul: #004a96;
+  --gris: #e1e1e1;
+  --naranja: #ff9900;
+  --blanco: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container-principal-agradecimiento img {
+  width: 60%;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.container-principal-agradecimiento img:hover {
+  transform: scale(1.1);
+  transition: all 500ms ease;
+}
+.container-principal-agradecimiento {
+  margin: 0 20px;
+  padding: 25px;
+  border: 1px solid var(--gris);
+  border-radius: 12px;
+}
+.container-principal-agradecimiento h1 {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.container-principal-agradecimiento h2 {
+  margin-top: 45px;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.container-principal-agradecimiento p {
+  margin-top: 45px;
+  font-size: 1.4rem;
+}
+
+#link {
+  text-transform: uppercase;
+  color: blue;
+}
+#link:hover {
+  color: var(--naranja);
+  transition: all 500ms ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 85%;
+  }
+}

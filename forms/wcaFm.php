@@ -4,7 +4,7 @@
  * por la direccion que debe aparecer como la direccion que envia el formulario.
  */
 $recipient = 'lucast@eym.com.ar';
-$from =  $_GET('email');
+$from =  'noreply@eym.com.ar';
 
 
 /*
@@ -201,7 +201,7 @@ if(extension_loaded('templates') && $template = tmpl_open('./tmpl.html')) {
 
 } else {
 
-    $parsed = "Enviado el dia: " .$fecha. " a las " .$hora. "<br><br>\n";
+    $parsed = "Mensaje enviado el dia: " .$fecha. " a las " .$hora. "<br><br>\n";
 
     foreach (array_keys($fields) as $field) {
 
@@ -227,7 +227,7 @@ if(extension_loaded('templates') && $template = tmpl_open('./tmpl.html')) {
 //
 $header = "MIME-Version: 1.0\n";
 $header .= "Content-type: text/html; charset=\"iso-8859-1\"\n";
-$header .= "From: " . $from . "\n";
+$header .= "From: " . $_POST['email'] . "\n";
 
 //
 // ..sends mail..

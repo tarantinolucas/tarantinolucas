@@ -378,10 +378,17 @@ nav {
 #seccion-inicio {
   scroll-behavior: smooth;
   background-color: #505454;
-  background-image: url(./img/bg-portada.jpg);
+  background-image: linear-gradient(
+      10deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(./img/bg-portada-mobile.jpg);
+  /* background-image: url(./img/bg-portada.jpg); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background-position: center;
 }
 .contenedor-principal {
   height: calc(100vh - 88px);
@@ -402,7 +409,7 @@ h1 {
 
 #seccion-inicio img {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 700px;
   box-sizing: border-box;
@@ -1022,9 +1029,9 @@ MOBILE
     margin: 0 35px;
   }
 
-  #seccion-inicio #img-inicio-mobile {
+  /* #seccion-inicio #img-inicio-mobile {
     max-width: 550px;
-  }
+  } */
   .div-logo-certificacion {
     justify-content: flex-start;
   }
@@ -1066,8 +1073,9 @@ MOBILE
   }
 
   #div-h1 h1 {
-    padding-top: 0;
-    padding-right: 5px;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid var(--azul);
+    margin-left: 15px;
   }
   section {
     margin: auto;
@@ -1115,15 +1123,36 @@ MOBILE
   #seccion-inicio #img-inicio-desktop {
     display: block;
     padding: 0;
-    max-width: 700px;
+    max-width: 1024px;
     margin: 0;
+    order: 1;
   }
   #seccion-inicio #img-inicio-mobile {
     display: none;
   }
 
   #seccion-inicio {
-    background-image: url(./img/bg-portada-prueba.jpg);
+    background-image: linear-gradient(
+        10deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(0, 0, 0, 0.15) 100%
+      ),
+      url(./img/bg-portada-desktop.jpg);
+  }
+  .boton-ver-mas-info {
+    font-size: 1.9rem;
+    margin: 40px 0 0 15px;
+    color: var(--azul);
+    font-weight: 500;
+  }
+  .boton-ver-mas-info:hover {
+    transform: translateX(30px);
+    transition: all 500ms ease;
+    color: var(--naranja);
+  }
+
+  #div-h1 {
+    order: 2;
   }
   .contenedor-principal {
     padding: 138px 0 0 0;
@@ -1381,9 +1410,13 @@ MOBILE
     min-width: 100%;
   }
 
-  h1 {
-    font-size: 4.5rem;
-    margin-bottom: 0px;
+  #div-h1 h1 {
+    border-bottom: 4px solid var(--azul);
+    font-size: 4.4rem;
+    margin-bottom: 80px;
+  }
+  .boton-ver-mas-info {
+    font-size: 2.2rem;
   }
 
   #seccion-inicio .boton-contactenos {
@@ -1459,4 +1492,9 @@ MOBILE
   }
 }
 
+@media (min-width: 1440px) {
+  #div-h1 h1 {
+    font-size: 5.5rem;
+  }
+}
 /* Created by tarantinolucas®. */
