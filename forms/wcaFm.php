@@ -3,7 +3,7 @@
  * Reemplazar destino@www.com.ar por la direccion de mail donde se desea recibir el formulario y desde@www.com.ar
  * por la direccion que debe aparecer como la direccion que envia el formulario.
  */
-$recipient = 'lucast@eym.com.ar';
+$recipient = 'info@eym.com.ar';
 $from =  'noreply@eym.com.ar';
 
 

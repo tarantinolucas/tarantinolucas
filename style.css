@@ -86,6 +86,33 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* CARGA RAPIDA */
+
+#seccion-inicio {
+  scroll-behavior: smooth;
+  background-color: #505454;
+  background-image: linear-gradient(
+      10deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(./img/bg-portada-mobile.jpg);
+  /* background-image: url(./img/bg-portada.jpg); */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
+
+#seccion-inicio {
+  background-image: linear-gradient(
+      10deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url(./img/bg-portada-desktop.jpg);
+}
+
 /* ESTANDARIZACION DEL CSS */
 :root {
   text-align: justify;
@@ -248,7 +275,7 @@ nav {
   position: fixed;
   top: 88px;
   transition: all 1200ms ease;
-  transform: translateX(100vw);
+  transform: translateX(110vw);
 }
 
 #btn-menu:checked + #menu-desplegable ul {
@@ -375,21 +402,6 @@ nav {
   margin-top: 0px;
 }
 
-#seccion-inicio {
-  scroll-behavior: smooth;
-  background-color: #505454;
-  background-image: linear-gradient(
-      10deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    url(./img/bg-portada-mobile.jpg);
-  /* background-image: url(./img/bg-portada.jpg); */
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center;
-}
 .contenedor-principal {
   height: calc(100vh - 88px);
   display: flex;
@@ -472,8 +484,9 @@ h1 {
 #seccion-quienes-somos > img {
   display: block;
   width: 100%;
-  margin: 30px auto 20px auto;
-  max-width: 520px;
+  margin: 25px auto;
+  max-width: 340px;
+  max-height: 440px;
 }
 
 /* SECCION CALIDAD */
@@ -604,18 +617,134 @@ h1 {
 }
 
 #seccion-producto a {
-  font-family: "Netto Pro";
-  font-size: 1.6rem;
-  color: var(--azul);
-  font-weight: 500;
-  margin: 50px 0;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.icon-pdf {
+  width: 16px;
+  margin-left: 10px;
 }
 
 #seccion-producto a:hover {
-  transform: translateX(30px);
+  transform: scaleX(1.1px);
   transition: all 500ms ease;
-  color: var(--naranja);
+  text-decoration: underline;
+}
+
+/* CARROUSEL - SECCION PRODUCTO */
+
+#carrousel-clientes {
+  margin: 15px 0px;
+}
+#carrusel-caja {
+  animation: automatizacion 90s infinite linear;
+  transition: all 0.75s ease;
+  width: 1000%;
+  display: flex;
+  align-items: center;
+}
+#carrusel-contenido {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: left;
+}
+.imagenes {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 25px auto;
+}
+.carrusel-elemento {
+  float: left;
+  width: 10%;
+}
+
+@keyframes automatizacion {
+  0% {
+    margin-left: 0;
+  }
+
+  5% {
+    margin-left: 0;
+  }
+
+  10% {
+    margin-left: -100%;
+  }
+
+  15% {
+    margin-left: -100%;
+  }
+
+  20% {
+    margin-left: -200%;
+  }
+
+  25% {
+    margin-left: -200%;
+  }
+
+  30% {
+    margin-left: -300%;
+  }
+
+  35% {
+    margin-left: -300%;
+  }
+
+  40% {
+    margin-left: -400%;
+  }
+
+  45% {
+    margin-left: -400%;
+  }
+
+  50% {
+    margin-left: -500%;
+  }
+
+  55% {
+    margin-left: -500%;
+  }
+
+  60% {
+    margin-left: -600%;
+  }
+
+  65% {
+    margin-left: -600%;
+  }
+
+  70% {
+    margin-left: -700%;
+  }
+
+  75% {
+    margin-left: -700%;
+  }
+
+  80% {
+    margin-left: -800%;
+  }
+
+  85% {
+    margin-left: -800%;
+  }
+
+  90% {
+    margin-left: -900%;
+  }
+
+  95% {
+    margin-left: -900%;
+  }
+
+  100% {
+    margin-left: -900%;
+  }
 }
 
 /* SECCION SERVICIO TECNICO */
@@ -842,6 +971,7 @@ footer h6 {
 }
 #div-leyenda-empresa {
   width: 100%;
+  margin-bottom: 15px;
 }
 #div-leyenda-empresa > a img {
   width: 50%;
@@ -1074,7 +1204,7 @@ MOBILE
 
   #div-h1 h1 {
     padding: 0 0 10px 0;
-    border-bottom: 2px solid var(--azul);
+    border-bottom: 1px solid var(--azul);
     margin-left: 15px;
   }
   section {
@@ -1124,21 +1254,13 @@ MOBILE
     display: block;
     padding: 0;
     max-width: 1024px;
-    margin: 0;
+    margin: 0 20px 0 0;
     order: 1;
   }
   #seccion-inicio #img-inicio-mobile {
     display: none;
   }
 
-  #seccion-inicio {
-    background-image: linear-gradient(
-        10deg,
-        rgba(255, 255, 255, 0.15) 0%,
-        rgba(0, 0, 0, 0.15) 100%
-      ),
-      url(./img/bg-portada-desktop.jpg);
-  }
   .boton-ver-mas-info {
     font-size: 1.9rem;
     margin: 40px 0 0 15px;
@@ -1190,17 +1312,14 @@ MOBILE
     grid-template-areas:
       "top-seccion top-seccion"
       "img h2"
-      "img p"
-      "img div-calidad"
-      "img div-compromiso"
-      "img boton";
+      "img p";
   }
 
   #seccion-quienes-somos > img {
+    width: 90%;
     grid-area: img;
-    padding-right: 20px;
     box-sizing: border-box;
-    align-self: center;
+    margin: auto;
   }
 
   #seccion-quienes-somos h2 {
@@ -1225,6 +1344,9 @@ MOBILE
   }
 
   /* SECCION PRODUCTO */
+  .imagenes {
+    width: 75%;
+  }
 
   #contenedor-caracteristicas-producto {
     display: grid;
@@ -1294,6 +1416,7 @@ MOBILE
     width: 40%;
     box-sizing: border-box;
     border-radius: 8px;
+    align-self: flex-start;
   }
 
   #contenedor-imagen img {
@@ -1310,6 +1433,7 @@ MOBILE
     width: 60%;
     box-sizing: border-box;
     padding-left: 30px;
+    align-self: flex-start;
   }
 
   #seccion-servicio-tecnico-texto > img {
@@ -1411,7 +1535,7 @@ MOBILE
   }
 
   #div-h1 h1 {
-    border-bottom: 4px solid var(--azul);
+    border-bottom: 2px solid var(--azul);
     font-size: 4.4rem;
     margin-bottom: 80px;
   }
@@ -1426,6 +1550,12 @@ MOBILE
   .linea-separacion-secciones {
     width: 10%;
     margin: 65px auto;
+  }
+
+  /* SECCION PRODUCTO */
+
+  #seccion-quienes-somos > img {
+    margin: 0 auto auto auto;
   }
 
   /* SECCION CALIDAD */
