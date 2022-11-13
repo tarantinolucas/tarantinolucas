@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="es-AR">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PN9SFDHK81"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PN9SFDHK81");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PM6T5LG");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,20 +41,25 @@
     />
     <meta
       name="keywords"
-      content="equipamiento medico, industria medica, desfibriladores, desfibrilador bifasico"
+      content="eym, eym.com.ar, eym electromedicina, equipamiento medico, industria medica, desfibriladores, desfibrilador bifasico, defibrillator, Biphasic,"
     />
     <title>E&M Electromedicina</title>
     <!-- ICONO DE PESTAÑA -->
-    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- FONTS -->
-
-    <!-- Colocar las fuentes aca -->
+    <link rel="shortcut icon" href="img/icono-eym.png" type="image/x-icon" />
   </head>
 
   <!-- HTML -->
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PM6T5LG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- HEADER -->
     <header>
       <nav>
@@ -32,13 +68,17 @@
             ><img
               id="nav-logo"
               src="./img/logo.png"
-              alt="logo-E&M Electromedicina"
+              alt="Logo de E&M Electromedicina"
           /></a>
         </div>
         <div class="div-hamburguesa-idioma">
           <a href="./index-EN.html" class="bandera-idioma">ENG</a>
           <label for="btn-menu">
-            <img id="nav-menu" src="./img/hamburger.png" />
+            <img
+              id="nav-menu"
+              src="./img/hamburger.png"
+              alt="Logo de menu hamburguesa"
+            />
           </label>
         </div>
       </nav>
@@ -61,14 +101,16 @@
         <label for="btn-menu"
           ><p>Cerrar menu<b>X</b></p></label
         >
-        <a href="#seccion-inicio"><li>Inicio</li></a>
-        <a href="#top-seccion-quienes-somos"><li>Quienes somos</li></a>
-        <a href="#top-seccion-producto"><li>Producto</li></a>
-        <a href="#top-seccion-calidad"><li>Calidad</li></a>
-        <a href="#top-seccion-servicio-tecnico"><li>Servicio técnico</li></a>
-        <a class="btn-contacto-menu-desplegable" href="#top-seccion-contacto"
-          ><li>Contacto</li></a
-        >
+        <li><a href="#seccion-inicio">Inicio</a></li>
+        <li><a href="#top-seccion-quienes-somos">Quienes somos</a></li>
+        <li><a href="#top-seccion-producto">Producto</a></li>
+        <li><a href="#top-seccion-calidad">Calidad</a></li>
+        <li><a href="#top-seccion-servicio-tecnico">Servicio técnico</a></li>
+        <li>
+          <a class="btn-contacto-menu-desplegable" href="#top-seccion-contacto"
+            >Contacto</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -87,14 +129,16 @@
             >
           </div>
           <img
+            loading="eager"
             id="img-inicio-mobile"
             src="./img/producto.png"
-            alt="Imagen del producto principal"
+            alt="Imagen del desfribrilador C-15"
           />
           <img
+            loading="eager"
             id="img-inicio-desktop"
             src="./img/producto.png"
-            alt="Imagen del producto principal"
+            alt="Imagen del desfibrilador C-15"
           />
           <!-- <img
             id="img-inicio-desktop"
@@ -120,8 +164,8 @@
         <h2>Quienes somos</h2>
         <img
           loading="lazy"
-          src="./img/imagen-quienes-somos-prueba1-redux.jpg"
-          alt="Imagen desfibrilador C-15"
+          src="./img/imagen-quienes-somos.jpg"
+          alt="Imagen de las instalaciones de E&M electromedicina"
         />
         <p>
           Combinando tecnología de avanzada, diseño y experiencia, los productos
@@ -152,34 +196,84 @@
           <div id="carrusel-contenido">
             <div id="carrusel-caja">
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-1.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-1.JPG"
+                  alt="Imagen frontal del desfibrilador C-15"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-2.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-2.JPG"
+                  alt="Imagen lateral del desfibrilador C-15"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-3.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-3.JPG"
+                  alt="Imagen lateral del desfibrilador C-15"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-4.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-4.JPG"
+                  alt="Imagen frontal del desfibrilador C-15 con registrador grafico"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-5.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-5.JPG"
+                  alt="Imagen inferior del desfibrilador C-15 con baterias"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-6.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-6.JPG"
+                  alt="Accesorios del desfibrilador C-15"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-7.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-7.JPG"
+                  alt="Imagen frontal del desfibrilador C-15 con parches descartables"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-8.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-8.JPG"
+                  alt="Imagen frontal del desfibrilador C-15 con paletas externas de adulto"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-9.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-9.JPG"
+                  alt="Imagen lateral del desfibrilador C-15"
+                />
               </div>
               <div class="carrusel-elemento">
-                <img class="imagenes" src="./img/C-carrousel-1.JPG" />
+                <img
+                  class="imagenes"
+                  loading="lazy"
+                  src="./img/C-carrousel-1.JPG"
+                  alt="Imagen frontal del desfibrilador C-15"
+                />
               </div>
             </div>
           </div>
@@ -229,7 +323,7 @@
 
         <div id="contenedor-caracteristicas-producto">
           <div class="tarjeta-caracteristica-producto producto-impar">
-            <img src="./img/onda bifasica.jpg" alt="imagen onda bifasica" />
+            <img src="./img/onda bifasica.jpg" alt="Onda bifasica" />
             <h5>Bifásico</h5>
             <p>
               Onda bifásica adaptativa a la impedancia del paciente Rango de
@@ -238,10 +332,7 @@
             </p>
           </div>
           <div class="tarjeta-caracteristica-producto producto-par">
-            <img
-              src="./img/garantia-extendida.jpg"
-              alt="imagen garantia extendida"
-            />
+            <img src="./img/garantia-extendida.jpg" alt="Garantia 3 años" />
             <h5>Garantía extendida</h5>
             <p>
               3 años de garantía, con bajo costo de mantenimiento operativo.
@@ -250,7 +341,7 @@
           <div class="tarjeta-caracteristica-producto producto-impar">
             <img
               src="./img/liviano.jpg"
-              alt="imagen persona sosteniendo equipo"
+              alt="Una persona sosteniendo el desfibrilador C-15"
             />
             <h5>Liviano</h5>
             <p>
@@ -261,7 +352,7 @@
           <div class="tarjeta-caracteristica-producto producto-par">
             <img
               src="./img/Detalle DEA.jpg"
-              alt="imagen desfibrilador automatico"
+              alt="Pantalla en modo DEA del desfibrilador C-15"
             />
             <h5>DEA</h5>
             <p>
@@ -271,7 +362,10 @@
             </p>
           </div>
           <div class="tarjeta-caracteristica-producto producto-impar">
-            <img src="./img/bateria.jpg" alt="imagen baterias del equipo" />
+            <img
+              src="./img/bateria.jpg"
+              alt="Imagen inferior del Desfibrilador C-15 con baterias"
+            />
             <h5>Doble alimentación</h5>
             <p>
               Sus 2 baterías desmontables y recargables mantienen la unidad
@@ -282,7 +376,7 @@
           <div class="tarjeta-caracteristica-producto producto-par">
             <img
               src="./img/Accesorios.jpg"
-              alt="imagen de los accesorios del equipo"
+              alt="Accesorios del desfibrilador C-15"
             />
             <h5>Versátil</h5>
             <p>
@@ -294,7 +388,7 @@
           <div class="tarjeta-caracteristica-producto producto-impar">
             <img
               src="./img/alta conectividad.jpg"
-              alt="imagen de conectividad del equipo"
+              alt="Desfibrilador C-15 conectado a una notebook"
             />
             <h5>Alta conectividad</h5>
             <p>
@@ -307,7 +401,10 @@
             href="./assets/Folleto C-15 Digital Español.pdf"
             target="_blank"
             >Descargar PDF
-            <img class="icon-pdf" src="./img/download.png" alt="descargar-pdf"
+            <img
+              class="icon-pdf"
+              src="./img/download.png"
+              alt="Icono de descarga de PDF"
           /></a>
         </div>
       </section>
@@ -320,10 +417,7 @@
         <div id="top-seccion-calidad" class="linea-superior-seccion"></div>
         <h2>Calidad</h2>
         <div class="div-caracteristicas-marca" id="div-calidad">
-          <img
-            src="./img/control-de-calidad.png"
-            alt="Imagen de certificacion de calidad"
-          />
+          <img src="./img/control-de-calidad.png" alt="Simbolo de calidad" />
           <div>
             <p>
               En E&M hemos desarrollado nuestro sistema de gestión de la calidad
@@ -367,14 +461,21 @@
                 como así también para su exportación.
               </p>
               <div class="div-logo-certificacion">
-                <img src="./img/logo-anmat.png" alt="Certificado ANMAT" />
+                <img
+                  src="./img/logo-anmat.png"
+                  alt="Logo ANMAT (Administración Nacional de Medicamentos, Alimentos y Tecnología Médica)"
+                />
                 <ul>
-                  <a href="./assets/Habilitacion-E&M.pdf" target="_blank">
-                    <li>Habilitación ANMAT</li>
-                  </a>
-                  <a href="./assets/Certificado-BPF-2022.pdf" target="_blank">
-                    <li>Certificado BPF</li>
-                  </a>
+                  <li>
+                    <a href="./assets/Habilitacion-E&M.pdf" target="_blank"
+                      >Habilitación ANMAT
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./assets/Certificado-BPF-2022.pdf" target="_blank"
+                      >Certificado BPF
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -392,12 +493,14 @@
               <div class="div-logo-certificacion">
                 <img
                   src="./img/logo-iram.png"
-                  alt="Certificado Logo-ISO-13485"
+                  alt="Logo de IRAM (Instituto Argentino de normalizacion y certificacion)"
                 />
                 <ul>
-                  <a href="./assets/Certificado-ISO13485.pdf" target="_blank">
-                    <li>Certificado ISO 13485</li>
-                  </a>
+                  <li>
+                    <a href="./assets/Certificado-ISO13485.pdf" target="_blank"
+                      >Certificado ISO 13485
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -417,12 +520,15 @@
           <img
             loading="lazy"
             src="./img/img-servicio-tecnico.jpg"
-            alt="imagen-servicio-tecnico"
+            alt="Placa con circuitos electronicos"
           />
         </div>
         <div id="seccion-servicio-tecnico-texto">
           <h2>Servicio técnico</h2>
-          <img src="./img/servicio-tecnico.png" alt="icono-servicio-tecnico" />
+          <img
+            src="./img/servicio-tecnico.png"
+            alt="Icono de servicio tecnico"
+          />
           <p>
             Nuestra empresa ofrece un servicio de excelente calidad para
             asegurar el correcto funcionamiento de los productos durante su
@@ -458,17 +564,17 @@
             target="_blank"
             ><img
               src="./img/whatsapp-color-primario.png"
-              alt="imagen-celular"
+              alt="Logo de whatsapp"
             />+54 9 (11) 5732-5112 (Servicio técnico)</a
           >
           <a href="tel:+541146352977" target="_blank"
-            ><img src="./img/telefono.png" alt="imagen-celular" />+54 (11)
-            4635-2977 (int.25)</a
+            ><img src="./img/telefono.png" alt="Logo de telefono de linea" />+54
+            (11) 4635-2977 (int.25)</a
           >
           <a href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6" target="_blank"
             ><img
               src="./img/ubicacion-color-primario.png"
-              alt="imagen-ubicacion"
+              alt="Logo de ubicacion"
             />Fonrouge 1861, Buenos Aires, Argentina</a
           >
         </div>
@@ -481,7 +587,10 @@
         <div id="contenedor-decorativo">
           <div id="seccion-contacto-texto">
             <h2>Contacto</h2>
-            <img src="./img/email2.png" alt="imagen-decorativa-contacto" />
+            <img
+              src="./img/email2.png"
+              alt="Logo de sobre de correspondencia"
+            />
             <form
               id="form"
               action="forms/wcaFm.php"
@@ -528,19 +637,24 @@
             <img
               id="img-sobre-desktop"
               src="./img/email2.png"
-              alt="imagen-decorativa-contacto"
+              alt="Logo de sobre de correspondencia"
             />
             <h5>Contáctenos</h5>
             <div class="div-mail-contacto">
-              <img src="./img/email2.png" alt="imagen-sobre" />
+              <img
+                src="./img/email2.png"
+                alt="Logo de sobre de correspondencia"
+              />
               <p>info@eym.com.ar</p>
             </div>
             <a href="tel:+541146352977" target="_blank"
-              ><img src="./img/telefono-blanco.png" alt="imagen-telefono" />+54
-              (11) 4635-2977 / 4635-6873</a
+              ><img
+                src="./img/telefono-blanco.png"
+                alt="Logo de telefono de linea"
+              />+54 (11) 4635-2977 / 4635-6873</a
             >
             <a href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6" target="_blank"
-              ><img src="./img/ubicacion.png" alt="imagen-ubicacion" />Fonrouge
+              ><img src="./img/ubicacion.png" alt="Logo de ubicacion" />Fonrouge
               1861, Buenos Aires, Argentina</a
             >
           </div>
@@ -551,7 +665,7 @@
     <footer>
       <div id="div-leyenda-empresa">
         <a href="#">
-          <img src="./img/logo-blanco.png" alt="logo-empresa" />
+          <img src="./img/logo-blanco.png" alt="Logo de E&M electromedicina" />
         </a>
         <!-- <div id="div-redes">
           <a href="https://twitter.com/EyM_electromedi" target="_blank"
@@ -572,10 +686,10 @@
       <div id="div-idioma" class="width-1-de-3">
         <h6>Seleccionar idioma</h6>
         <a class="links-footer" href="./index.html"
-          >Español<img src="./img/espana.png" alt="bandera de españa"
+          >Español<img src="./img/espana.png" alt="Bandera de españa"
         /></a>
         <a class="links-footer" href="./index-EN.html"
-          >Ingles<img src="./img/reino-unido.png" alt="bandera de Reino unido"
+          >Ingles<img src="./img/reino-unido.png" alt="Bandera de Reino unido"
         /></a>
       </div>
       <div id="div-accesos-rapidos" class="width-1-de-3">
@@ -593,22 +707,28 @@
       <div id="div-datos-de-contacto" class="width-1-de-3">
         <h6>Contáctenos</h6>
         <div class="div-mail-contacto">
-          <img src="./img/email2.png" alt="imagen-sobre" />
+          <img
+            src="./img/email2.png"
+            alt="imagen de sobre de correspondencia"
+          />
           <p>info@eym.com.ar</p>
         </div>
         <a class="links-footer" href="tel:+541146352977" target="_blank"
-          ><img src="./img/telefono-blanco.png" alt="imagen-telefono" />+54 (11)
-          4635-2977 / 4635-6873</a
+          ><img
+            src="./img/telefono-blanco.png"
+            alt="Logo de telefono de linea"
+          />+54 (11) 4635-2977 / 4635-6873</a
         >
         <a
           class="links-footer"
           href="https://goo.gl/maps/CDhFY1FyHa3mgnDq6"
           target="_blank"
-          ><img src="./img/ubicacion.png" alt="imagen-ubicacion" />Fonrouge
+          ><img src="./img/ubicacion.png" alt="Logo de ubicacion" />Fonrouge
           1861, Buenos Aires, Argentina</a
         >
       </div>
       <iframe
+        title="Mapa de la zona donde se encuentra la empresa E&M electromedicina"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26258.479420535317!2d-58.50052931617736!3d-34.646875066299614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90f333bb825%3A0x5899ce4f9f0639a6!2sE%26M%20Electromedicina!5e0!3m2!1ses-419!2sar!4v1667553812222!5m2!1ses-419!2sar"
         width="600"
         height="450"
@@ -622,18 +742,26 @@
           target="_blank"
           id="img-afip"
           href="http://qr.afip.gob.ar/?qr=jHUqb-1hDDK6i87xYR3PsA,,"
-          ><img src="./img/DATAWEB.jpg" alt="Data Fiscal"
+          ><img
+            src="./img/DATAWEB.jpg"
+            alt="QR simbolico de informacion fiscal de E&M electromedicina"
         /></a>
       </div>
       <p>
         © 2022 Soluciones tecnológicas para la salud S.A. Todos los derechos
         reservados.
+        <span class="span-diseño"
+          >Diseñado por
+          <a href="https://www.linkedin.com/in/tarantino-lucas/" target="_blank"
+            >tarantinolucas®</a
+          ></span
+        >
       </p>
       <a
         id="link-whatsapp"
         target="_blank"
         href="https://api.whatsapp.com/send?phone=5491137623761&text="
-        ><img src="./img/whatsapp.png" alt="logo-whatsapp"
+        ><img src="./img/whatsapp.png" alt="Logo de whatsapp"
       /></a>
     </footer>
     <script src="./script.js"></script>
